@@ -1,2 +1,9 @@
-/* style sheet for SEG3125 module 1 lab: questionnaire
+/* style sheet for SEG3125 module 1 lab: questionnaire */
 
+.header {
+  padding: 20px;
+  text-align: center;
+  background-image: url(/images/header.png);
+  color: white;
+  font-size: 30px;
+}
