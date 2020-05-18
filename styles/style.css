@@ -6,4 +6,10 @@
   background-image: url(/images/header.png);
   color: white;
   font-size: 30px;
+  font-family: Impact;
+}
+
+a {
+  color: #007471;
+  text-decoration: none;
 }
