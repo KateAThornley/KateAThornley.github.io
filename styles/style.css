@@ -3,8 +3,8 @@
 .header {
   padding: 20px;
   text-align: center;
-  background-image: url(/images/header.png);
-  color: white;
+  /* background-image: url(/images/background-test.jpg); */
+  color: rgb(227, 235, 235);
   font-size: 30px;
   font-family: Impact;
 }
@@ -12,4 +12,9 @@
 a {
   color: #007471;
   text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(227, 235, 235);
 }
