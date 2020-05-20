@@ -2,19 +2,61 @@
 
 .header {
   padding: 20px;
-  text-align: center;
+
   /* background-image: url(/images/background-test.jpg); */
   color: rgb(227, 235, 235);
   font-size: 30px;
-  font-family: Impact;
+  font-family: "Alegreya Sans SC";
+}
+
+title {
+  justify-content: center;
+}
+
+.body {
+  background-color: #001c1a;
+  max-width: 900px;
+  margin: auto;
+  width: 50%;
+  font-family: "Alegreya Sans SC";
+}
+
+.forms {
+  justify-content: center;
+  color: rgb(227, 235, 235);
+}
+
+.question-text {
+  font-size: 20px;
+  font-family: "Alegreya Sans SC";
+  color: rgb(227, 235, 235);
 }
 
 a {
-  color: #007471;
+  color: #ffcccc;
   text-decoration: none;
+}
+
+p {
+  color: rgb(227, 235, 235);
+  /* font-size: 20px; */
 }
 
 .footer {
   text-align: center;
   color: rgb(227, 235, 235);
+}
+
+img {
+  max-width: 600px;
+  max-height: fit-content;
+  justify-content: center;
+}
+
+.submitButton {
+  background-color: #00b9b2;
+  border: none;
+  color: #007471;
+  text-decoration: none;
+  cursor: pointer;
 }
