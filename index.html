@@ -6,24 +6,80 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <title>Module 1: Questionnaire</title>
   </head>
+  <div class="header" >
+    <h1>SEG3125 Questionnaire</h1>
+    <p>The following is a questionnaire built for the first lab of SEG3125. <br> This lab reviews the UI elements of 
+  <a href=https://theordinary.deciem.com/>The Ordinary from Deciem</a>, website that sells Deciem skincare products from the The Ordinary line.
+  </p>
+  </div>
   <body class="body" >
-    <div class="header" >
-      <h1>SEG3125 Questionnaire</h1>
-      <p>The following is a questionnaire built for the first lab of SEG3125. <br> This lab reviews the UI elements of 
-    <a href=https://theordinary.deciem.com/>The Ordinary from Deciem</a>, website that sells Deciem skincare products from the The Ordinary line.
-    </p>
-    </div>
     <div class="forms" style="align-content: center;"> 
-        <form name="Question 1" action="index.php"></form>
-        <p class="question-text">What is your first impression of the The Ordinary home page shown below:</p>
-        <a style="padding-top:15px; padding-bottom: 5px;" href="https://theordinary.deciem.com/"><img src="images/homepage-the-ord.png"></a><br>
-        Response: <input type="text" name="q1"></div>
-            <input style="background-color: #ffcccc;" type="submit" value="submit">
+        <form name="Question 1" action="index.php">
+            <p class="question-text">1. What is your first impression of the The Ordinary's page for one of their cleansing products:</p>
+            <a style="padding-top:15px; padding-bottom: 5px;" href="https://theordinary.deciem.com/"><img src="images/homepage-the-ord.png"></a><br>
+            Response: <input style="width: 400px; margin-top: 10px;" type="text" name="q1"><br>
+        </form>
+        <hr>
+        <form name="Question 2" action="index.php">
+            <p class="question-text">2. Does the layout of the above product page for The Ordinary make you feel: </p>
+            <input type="radio" id="focused" name="product eval" value="focused">
+            <label for="focused">Focused</label><br>
+            <input type="radio" id="distracted" name="product eval" value="distracted">
+            <label for="female">Distracted</label><br>
+            <input type="radio" id="Neutral" name="product eval" value="neutral">
+            <label for="other">Neutral</label>
+        </form>
+        <hr>
+        <form name="Question 3" action="index.php">
+            <p class="question-text">3. Do you find the following page of the The Ordinary website to be aesthetically pleasing: </p>
+            <a href="https://theordinary.deciem.com/vitcguide"> <img src='images/question3-example.png'></a><br>
+               Select one: <select style="margin-top: 10px;"name="response" id="aesthetics"><br>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="unsure">Unsure</option>
+                </select><br>
+        </form>
+        <hr>
+        <form name="Question 4" action="index.php">
+            <p class="question-text">4. Select all adjectives that you feel describe the above image of The Ordinary's Vitamin C product page: </p>
+            
+               <select style="margin-top: 10px; font-size: 15px; height: 90px;"name="response" id="aesthetics" multiple>
+                    <option value="clear">Clear</option>
+                    <option value="consistent">Consistent</option>
+                    <option value="distinct">Distinct</option>
+                    <option value="patterned">Patterned</option>
+                    <option value="minimalistic">Minimalistic</option>
+                    <option value="Hierarchical">Hierarchical</option>
+               </select><br>
+        </form>
+        <hr>
+        <form name="Question 4" action="index.php">
+            <p class="question-text">5. How impressed are you by the The Ordinary website: </p>
+            
+            <ul class="likert">
+                <li> Impressed </li>
+                <li><input type="radio" name="guilty" value="1" /></li>
+                <li><input type="radio" name="guilty" value="2" /></li>
+                <li><input type="radio" name="guilty" value="3" /></li>
+                <li><input type="radio" name="guilty" value="4" /></li>
+                <li><input type="radio" name="guilty" value="5" /></li>
+                <li> Unimpressed </li>
+              </ul><br>
+        </form>
+        <hr>
+        <form name="Question 6" action="index.php">
+            <p class="question-text">6. Please input any final comments you have on the User Interface of The Ordinary: </p>
+            Comments: <input style="width: 400px; margin-top: 10px;" type="text" name="q1"><br>
+               
+        </form>
+        
+        <input style="background-color: #ffcccc; margin-top: 20px; font-size: large; cursor: pointer" type="submit" value="submit">
        
     </div>
    
   </body>
   <div class="footer">
+      <br>
   <footer>Website designed by Kate Thornley</footer>
   </div>
 </html>
