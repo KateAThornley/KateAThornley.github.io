@@ -67,3 +67,7 @@ hr {
   float: left;
   list-style-type: none;
 }
+
+.submitBttn {
+  border-radius: 10px;
+}
