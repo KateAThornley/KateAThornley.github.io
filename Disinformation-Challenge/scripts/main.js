@@ -1,5 +1,4 @@
 var ctx = document.getElementById('myChart');
-var Chart = require('chart.js');
 
 var myChart = new Chart(ctx, {
 	type: 'bar',
