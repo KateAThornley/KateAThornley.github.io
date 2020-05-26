@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="utf-8" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="topnav">
+      <img
+        style="
+          max-width: 90px;
+          padding-bottom: 6px;
+          padding-left: 5px;
+          padding-right: 5px;
+          float: left;
+        "
+        src="assets/logo.png"
+      />
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="legend.html">LEGEND</a>
+      <input
+        style="width: 40%; padding-top: 6px;"
+        type="text"
+        placeholder="  Search..."
+        id="input"
+      />
+      <script>
+        document.getElementById("input").onkeypress = function (event) {
+          if (event.keyCode == 13 || event.which == 13) {
+            var script = document.createElement("script");
+            script.src = "scripts/main.js";
+            script.type = "text/javascript";
+            document.body.parentNode.appendChild(script);
+          }
+        };
+      </script>
+    </div>
+
+    <div class="parallax">
+      <div
+        style="
+          text-align: center;
+          color: #fff;
+          font-size: 40px;
+          padding-top: 70px;
+        "
+      >
+        THE LEGEND <br />
+      </div>
+      <div
+        style="
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          padding-top: 20px;
+        "
+      >
+        FOR MAXIMUM TRANSPARENCY, WE'VE INCLUDED A LEGEND FOR BETTER <br />
+        UNDERSTANDING WHERE SOURCES LIE ON OUR SCALE
+      </div>
+    </div>
+    <div style="width: 240px;" class="pointer">
+      <h2
+        style="
+          text-align: center;
+          padding-top: 5px;
+          color: #fff;
+          padding-left: 15px;
+        "
+      >
+        PARTISANSHIP
+      </h2>
+    </div>
+    <div class="abtParagraph">
+      <p>
+        <ul>
+            <li>
+                <b>0, Extreme:</b> Strongly endorses a particular political ideology and holds extreme views. Only reports on one side of an issue. Rarely cites credible sources. Uses loaded words to convey emotion and sway the reader. Headlines often don’t match the story. 
+            </li><br>
+            <li>
+                <b>0.1-0.3, More Partisan:</b> Likely endorses a political ideology. May hold some extreme views. Often reports on only one side of an issue. Sometimes cites credible sources. Often uses loaded words to sway the reader, headlines often don’t match the story.
+            </li><br>
+            <li>
+                <b>0.4-0.6, Possible Skew:</b> May sometimes endorse a particular political ideology in news coverage. Does not hold extreme views. Sometimes reports unbalanced news and may publish one side of an issue. Usually factual. Sometimes uses loaded words to sway the reader. Headlines sometimes do not match the story.</li>
+            <li><br>
+                <b>0.7-1, Most Neutral
+                </b> Does not endorse a particular ideology or hold extreme views. Balances news reports. Reports factually and backs up claims with well sourced evidence. Does not use loaded words to sway the reader. Headlines match the story.</li>
+        </ul>
+      </p>
+    </div>
+    <div style="width: 240px;" class="pointer">
+        <h2
+          style="
+            text-align: center;
+            padding-top: 5px;
+            color: #fff;
+            padding-left: 15px;
+          "
+        >
+          CREDIBILITY
+        </h2>
+      </div>
+      <div class="abtParagraph">
+        <p>
+          <ul>
+              <li>
+                  <b>0-0.1, Very low:
+                </b> The source almost never cites credible sources. Not trustworthy or reliable. Must be fact checked. Risk of intentional fake news, conspiracy, and propaganda.
+              </li>                <br>
+              <li>
+                  <b>0.2-0.3, Low: </b>Rarely cites credible sources. Not trustworthy or reliable. Must be fact checked. Risk of intentional fake news, conspiracy, and propaganda.</li><br>
+              <li>
+                  <b>0.4-0.5, Mixed: </b> Sometimes cites credible sources or cites other mixed sources. Have failed one or more fact checks. Does not correct false or misleading information. Does not disclose ownership information. Uses extremely loaded language and alters the context of facts. Does not support scientific consensus.</li><br>
+          <li><b>0.6-0.7, Mostly Factual: </b>Usually factual. May have failed a fact check that was not corrected in a timely manner. Occasionally use biased sources. Generally pro-science. May be misleading in wording. Trustworthy most of the time.</li><br>
+        <li>
+            <b>
+                0.8-0.9, High: 
+            </b>Almost always factual. Cites mostly credible information. Immediately corrects incorrect information. Has failed only 1 fact check. Uses reasonable language that retains context.</li><br>
+       <li><b>1: Very High: </b>Always factual. Cites credible information. Makes immediate corrections to incorrect information. Has never failed a fact check.</li><br>
+        </ul>
+        </p>
+      </div>
+  </body>
+  <div class="footer">
+    <footer>
+      <i>
+        Website made by Kate Thornley and Humam Shwaikh, in collaboration with
+        Charlee Heath
+      </i>
+    </footer>
+  </div>
+</html>
