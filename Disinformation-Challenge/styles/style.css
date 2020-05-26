@@ -22,6 +22,7 @@ body {
   overflow: hidden;
   background-color: #2b3236;
   padding-top: 8px;
+  padding-left: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -33,19 +34,19 @@ body {
   padding: 14px 16px;
   border-radius: 30px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   color: black;
 }
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #58a4b5;
-  color: white;
+  /* background-color: #58a4b5; */
+  color: #58a4b5;
 }
 
 /* Style the search box inside the navigation bar */
@@ -86,12 +87,20 @@ body {
 
 .mainContent {
   justify-content: center;
+  max-width: 69%;
 }
 
 .sidebar {
   float: right;
+  height: 100%;
   width: 30%;
   background-color: #ccc;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
