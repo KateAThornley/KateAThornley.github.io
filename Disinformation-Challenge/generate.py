@@ -7,10 +7,10 @@ import collections
 # aliases
 OrderedDict = collections.OrderedDict
 
-src = 'sheet1.csv'
+src = 'sheet.csv'
 dst = 'data.json'
 header = [
-    'Source','Article' 'Title' ,'URL','Partisanship Rating','Credibility Rating','Article Text'
+    'Source','Article' 'Title' ,'URL','x' ,'y','','','Article Text'
 ]
 
 data = []

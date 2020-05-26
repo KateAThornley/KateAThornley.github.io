@@ -1,8 +1,20 @@
 "Search Term: Covid 19
 Note: I'm just picking whatever was the top article under this search term (May 25 10:00pm) I tried to select news over opinion articles where possible",,,,,,,
-Source,Article Title ,URL,Partisanship Rating,Partisanship Rating,Credibility Rating (I'm doing this based on the Article for now because I don't have time to do the whole site),Credibility Rating (I'm doing this based on the Article for now because I don't have time to do the whole site),Article Text
-Press Progress,Big Majority Expects Major Social Reforms and ‘Transformation’ of Canadian Society After COVID-19,https://pressprogress.ca/big-majority-expects-major-social-reforms-and-transformation-of-canadian-society-after-covid-19/,Most partisan bias,,"Fair interpretations of the news
-",,"""The next federal election could shape up to be a battle over what the “new normal” in Canadian society should look like after COVID-19.
+Source,Article Title ,URL,Partisanship Rating,"Partisanship Rating (out of 1)
+1= most neutral (least biased)
+4= Possible Skew (left/right-centre)
+7= More Partisan Bias (left/right)
+10= Extreme",Credibility Rating (I'm doing this based on the Article for now because I don't have time to do the whole site),"Credibility Rating (I'm doing this based on the Article for now because I don't have time to do the whole site)
+(Factual reporting: out of 12 also)
+0= very low
+2= low
+4= mixed
+6= mostly factual
+8= high
+10=very high
+",Article Text
+Press Progress,Big Majority Expects Major Social Reforms and ‘Transformation’ of Canadian Society After COVID-19,https://pressprogress.ca/big-majority-expects-major-social-reforms-and-transformation-of-canadian-society-after-covid-19/,0.6931471806,7,"Fair interpretations of the news
+(high)",8,"The next federal election could shape up to be a battle over what the “new normal” in Canadian society should look like after COVID-19.
 
 According to new polling from EKOS, a clear majority of Canadians agree that the pandemic has exposed “ugly truths” about how workers and the elderly have been treated in Canada under the old status quo.
 
@@ -33,9 +45,9 @@ Stephen Harper disagrees: One person who can sense which way the winds of change
 
 Writing in the Wall Street Journal, Stephen Harper warns global financial elites that the case for austerity may “encounter serious resistance” now that workers have seen what government can accomplish when the full power of the state is actually focused on the health and well-being of workers:
 
-“… Opposition this time may even be stronger. Many workers have been reduced to limited stipends by government-ordered shutdowns … Those laid off in public institutions have generally received full pay. Their experience of a guaranteed maximum income will feed the delusion that current economic and fiscal management is somehow viable.”"""
-Rabble,Lessons from COVID-19: We are only as strong as our weakest link,https://rabble.ca/blogs/bloggers/views-expressed/2020/03/lessons-covid-19-we-are-only-strong-our-weakest-link,Most partisan bias,,"Fair interpretations of the news
-",,"""There is a lot we still don't know about COVID-19 (coronavirus) and how hard it will impact Canada. But one thing we're learning: we are only as strong as our weakest link.
+“… Opposition this time may even be stronger. Many workers have been reduced to limited stipends by government-ordered shutdowns … Those laid off in public institutions have generally received full pay. Their experience of a guaranteed maximum income will feed the delusion that current economic and fiscal management is somehow viable.”"
+Rabble,Lessons from COVID-19: We are only as strong as our weakest link,https://rabble.ca/blogs/bloggers/views-expressed/2020/03/lessons-covid-19-we-are-only-strong-our-weakest-link,1.386294361,8,"Fair interpretations of the news
+(high)",8,"There is a lot we still don't know about COVID-19 (coronavirus) and how hard it will impact Canada. But one thing we're learning: we are only as strong as our weakest link.
 
 COVID-19 is exposing a number of weak links globally and here in Canada.
 
@@ -105,9 +117,9 @@ Economists are already talking about the need to ""supersize"" refundable tax cr
 
 If we manage to contain COVID-19, it will be because of individual efforts to follow public-health protocols and because of the expertise of public-health officials in quickly establishing those protocols.
 
-These are our strongest links in the system. Let's invest in keeping them strong."""
-Tyee,Shut Out: How Families Have Fallen Off the Housing Ladder,https://thetyee.ca/News/2020/05/14/Families-Falling-Off-Housing-Ladder/,Most partisan bias,,"Fair interpretations of the news
-",,"In 2005, Tom Lancaster and his wife bought a 510-square-foot, one-bedroom townhouse in East Vancouver.
+These are our strongest links in the system. Let's invest in keeping them strong."
+Tyee,Shut Out: How Families Have Fallen Off the Housing Ladder,https://thetyee.ca/News/2020/05/14/Families-Falling-Off-Housing-Ladder/,1.791759469,6,"Fair interpretations of the news
+",8,"In 2005, Tom Lancaster and his wife bought a 510-square-foot, one-bedroom townhouse in East Vancouver.
 
 
 ANNOUNCEMENTS, EVENTS & MORE FROM TYEE AND SELECT PARTNERS
@@ -286,7 +298,7 @@ He’d also like to see the gap between homeowners and renters narrowed.
 “I feel that housing is a human right and we live in cities where people are getting incredibly rich off of holding land and holding housing,” he said.
 
 “The disparity between the people who own and those who rent is just so stark to us right now, it’s amazing.”"
-Post Millennial,Insane article promotes coronavirus as a force to fight climate change,https://thepostmillennial.com/insane-article-promotes-coronavirus-as-a-force-to-fight-climate-change,Most partisan bias,,Unfair interpretations of the news:,,"In a new, blisteringly white-hot take called “Coronavirus can trigger a new industrial revolution,” a very super smart guy who knows better than us named Ed Conway explains how the coronavirus has an upside: “Unlike most other such diseases, it kills mostly the old who, let’s face it, are more likely to be climate sceptics. It spares the young. Most of all, it stymies the forces that have been generating greenhouse gases for decades.”
+Post Millennial,Insane article promotes coronavirus as a force to fight climate change,https://thepostmillennial.com/insane-article-promotes-coronavirus-as-a-force-to-fight-climate-change,2.079441542,7,Unfair interpretations of the news:,6,"In a new, blisteringly white-hot take called “Coronavirus can trigger a new industrial revolution,” a very super smart guy who knows better than us named Ed Conway explains how the coronavirus has an upside: “Unlike most other such diseases, it kills mostly the old who, let’s face it, are more likely to be climate sceptics. It spares the young. Most of all, it stymies the forces that have been generating greenhouse gases for decades.”
 
 This is a shocking display of hubris, looking intense, life-ending natural disaster in the face, and saying “hey, maybe it’s not so bad.” To a certain extent, we’ve been waiting for this to happen. It was inevitable. After years of alarmism and dangerous fetishization, we’ve reached the moment in our current age of hysteria and panic where a major publication is publishing an ode to a potentially cataclysmic pathogen because the side effects will be a lowering of carbon emissions and the death of the type of people who don’t consider that a priority.
 
@@ -318,7 +330,7 @@ Saving the earth at the cost of the population is not a good goal, and those act
 While the climate crisis needs to be dealt with, it isn’t through ramping down human activity that we will be successful, but in trusting human ingenuity and strength to figure out new energy sources that can provide greater power at less cost to humanity and the planet.
 
 People matter. All people. The young, old, sick, healthy, woke and redpilled. The practically pathogenic dehumanization that Conway is practising must be rejected at all costs."
-True North New,Offenders charged with violent crimes to be released from prison over COVID-19 risk,https://tnc.news/2020/04/08/offenders-charged-with-violent-crimes-to-be-released-from-prison-over-covid-19-risk/,Most partisan bias,,Unfair interpretations of the news:,,"Judges have been freeing dangerous offenders into the public due to the coronavirus pandemic. 
+True North New,Offenders charged with violent crimes to be released from prison over COVID-19 risk,https://tnc.news/2020/04/08/offenders-charged-with-violent-crimes-to-be-released-from-prison-over-covid-19-risk/,2.302585093,7,Unfair interpretations of the news:,6,"Judges have been freeing dangerous offenders into the public due to the coronavirus pandemic. 
 
 As reported on by Global News, several criminals who were in custody for violent offences were recently released. 
 
@@ -346,7 +358,7 @@ T.L. was alleged to have been involved in a Sept. 30, 2019 shooting that resulte
 “The shooter is charged with attempted murder. Mr. L. is charged with having aided that. He is also charged with having provided the weapon.” 
 
 In the decision to order T.L’s release the judge referred to the “unique circumstances” regarding the COVID-19 pandemic and that it was difficult to determine when the accused’s trial would begin. "
-Quillette,Drop Anchor: How COVID-19 Will Kill the Cruise Industry,https://quillette.com/2020/05/19/drop-anchor-how-covid-19-will-kill-the-cruise-industry/,Most partisan bias,,Unfair interpretations of the news:,,"Last week, Air Canada announced it was cutting its workforce by at least half, effective next month. This is not surprising, since flight attendants can’t do their jobs when there are no flights. Air Canada is now flying at one-twentieth its pre-pandemic capacity. The airline hopes to ramp up operations in coming months, but even optimistic estimates put late-2020 airline travel volume at about one-quarter of baseline levels.
+Quillette,Drop Anchor: How COVID-19 Will Kill the Cruise Industry,https://quillette.com/2020/05/19/drop-anchor-how-covid-19-will-kill-the-cruise-industry/,2.48490665,4,Unfair interpretations of the news:,5,"Last week, Air Canada announced it was cutting its workforce by at least half, effective next month. This is not surprising, since flight attendants can’t do their jobs when there are no flights. Air Canada is now flying at one-twentieth its pre-pandemic capacity. The airline hopes to ramp up operations in coming months, but even optimistic estimates put late-2020 airline travel volume at about one-quarter of baseline levels.
 
 Similar patterns are playing out everywhere. COVID-19 has decimated the travel industry. It will return, of course, but will it be the same as we remember it?
 
@@ -367,8 +379,8 @@ But this amnesia has its limits. And so I offer my prediction that—absent a fo
 As with many of the changes that COVID-19 will bring about—including the retail migration to Amazon and the trend of people working from home—this may be a case of simply accelerating something that would have come about anyway. Every new generation is more sensitive to environmental issues than the one before. And cruise ships gobble obscene amounts of fuel, and can directly or indirectly befoul some of the most beautiful places on Earth. They also happen to be floating dens of all-you-can-eat gluttony that sometimes resemble a fattening farm run by Kang and Kodos. Even before COVID-19, cruising already was seen as a politically incorrect, white-privilege, “Ok, boomer” form of indulgence. We live in an age when even many grandparents follow social media and know the derisive cruise memes from Seinfeld et cetera. They were willing to suffer the stigma associated with cruising for the sake of the attendant pleasures. But add on the threat of respiratory failure and you can bet they’ll opt instead for a socially isolated bike tour with Butterfield & Robinson.
 
 The demise of big-ship cruising should not be regretted, even if my own memories are fond. And the ships themselves could be repurposed in permanent dockage as time-share condos. Fort Lauderdale in our winter one year, Sydney in Australia’s summer the next. True, you’ll never be able to step off in Yalta to gaze upon the room where Stalin, Churchill, and Roosevelt planned the architecture of the post-war world. But at the end of the day, a room is just a room, just as a beach is just a beach. As Wikipedia attests, Allied leaders had the foresight to snap their own selfies back in 1945. In the post-COVID-19 world, I’m really not sure how many of us will be risking infection to snap our own."
-APTN,Jurisdictional limbo’ left Metis in Saskatchewan unprepared for COVID-19 says MNC spokesperson,https://www.aptnnews.ca/national-news/jurisdictional-limbo-left-metis-in-saskatchewan-unprepared-for-covid-19-says-mnc-spokesperson/,Possible Skew,,"Fair interpretations of the news
-",,"Metis villages in northern Saskatchewan with rising COVID-19 cases are in “jurisdictional limbo” between federal and provincial governments that left them underprepared for the coronavirus pandemic, according to Metis National Council (MNC) spokesperson David Chartrand.
+APTN,Jurisdictional limbo’ left Metis in Saskatchewan unprepared for COVID-19 says MNC spokesperson,https://www.aptnnews.ca/national-news/jurisdictional-limbo-left-metis-in-saskatchewan-unprepared-for-covid-19-says-mnc-spokesperson/,2.63905733,3,"Fair interpretations of the news
+",8,"Metis villages in northern Saskatchewan with rising COVID-19 cases are in “jurisdictional limbo” between federal and provincial governments that left them underprepared for the coronavirus pandemic, according to Metis National Council (MNC) spokesperson David Chartrand.
 
 “There was no plan, no supports, no programs, no supply chain, nothing, because both governments are saying, ‘No, it’s not my jurisdiction. It’s yours.’,” Chartrand told the Standing Committee on Indigenous and Northern Affairs (INAN), which met virtually to discuss the pandemic’s impact on Indigenous communities.
 
@@ -427,7 +439,7 @@ On multiple occasions as the committee hearing progressed, AFN National Chief Pe
 As numbers rose in northwestern Saskatchewan, both Ottawa and Regina started sending additional material and human resources, personal protective equipment (PPE), and point-of-care rapid testing equipment.
 
 Bellegarde and Chartrand urged federal and provincial governments to set jurisdictional disputes aside and work together during the public health emergency"
-National Observer,Employers readying for reopening worry about second wave of COVID-19,https://www.nationalobserver.com/2020/05/25/news/employers-readying-reopening-worry-about-second-wave-covid-19,Possible Skew,,Quality News,,"Chef Kreg Graham says he's been doing a lot of thinking about washing dishes now that some COVID-19 restrictions have been lifted and he can start serving meals again.
+National Observer,Employers readying for reopening worry about second wave of COVID-19,https://www.nationalobserver.com/2020/05/25/news/employers-readying-reopening-worry-about-second-wave-covid-19,2.772588722,5,Quality News,8,"Chef Kreg Graham says he's been doing a lot of thinking about washing dishes now that some COVID-19 restrictions have been lifted and he can start serving meals again.
 
 The executive chef at the Victoria-area Oak Bay Beach Hotel said much of the time he's spending in the kitchen preparing for a restart has been on safety protocols, not the menu.
 
@@ -461,7 +473,7 @@ The survey also found 75 per cent of businesses worry about attracting customers
 ""I would say the business community is under incredible pressure over the next several months as we enter more into this reopening phase,"" Anderson said.
 
 The B.C. government said Friday it would allow pubs, restaurants and other businesses in the hospitality sector to apply to temporarily expand their service areas to outside patios to enlarge their footprint."
-Le Devoir,Il existe deux branches de coronavirus depuis le début de la pandémie,https://www.ledevoir.com/societe/science/579596/il-existe-deux-branches-de-coronavirus-depuis-le-debut-de-la-pandemie,Possible Skew,,Quality News,,"Le coronavirus responsable de la pandémie de COVID-19 évolue lentement, mais les multiples mutations qu’il a subies depuis qu’il s’attaque à l’humain n’ont jusqu’à maintenant en rien modifié son caractère pathogène, souligne une étude publiée dans la revue Nature. Cette publication confirme également que deux grandes lignées génétiques distinctes de SRAS-CoV-2 sont à l’origine de la pandémie, dont seulement l’une des deux aurait été contractée par des humains dans un marché public de Wuhan, en Chine.
+Le Devoir,Il existe deux branches de coronavirus depuis le début de la pandémie,https://www.ledevoir.com/societe/science/579596/il-existe-deux-branches-de-coronavirus-depuis-le-debut-de-la-pandemie,2.890371758,2,Quality News,8,"Le coronavirus responsable de la pandémie de COVID-19 évolue lentement, mais les multiples mutations qu’il a subies depuis qu’il s’attaque à l’humain n’ont jusqu’à maintenant en rien modifié son caractère pathogène, souligne une étude publiée dans la revue Nature. Cette publication confirme également que deux grandes lignées génétiques distinctes de SRAS-CoV-2 sont à l’origine de la pandémie, dont seulement l’une des deux aurait été contractée par des humains dans un marché public de Wuhan, en Chine.
 
 La pandémie de COVID-19 a émergé à Wuhan, vraisemblablement dans un marché de fruits de mer, plus précisément dans le Huanan Seafood Wholesale Market. Toutefois, le fait qu’un nombre considérable de cas initiaux de COVID-19 n’ont pas eu de contacts avec ce marché jette un doute sur le contexte particulier qui a permis au coronavirus de passer de l’animal à l’humain.
 
@@ -484,7 +496,7 @@ L’analyse phylogénétique de ces deux clades suggère aussi que l’événeme
 « Comme tous les virus, le SRAS-CoV-2 continue d’évoluer, et il continuera de subir des mutations, mais jusqu’à maintenant, il n’y a aucune preuve que les mutations survenues dans son génome ont eu un impact sur ses caractéristiques adaptatives, notamment sur son aptitude à se transmettre et sur la sévérité de la maladie qu’il induit. L’évolution du virus est stable dans le sens où elle n’a pas abouti à des souches qui ont des manifestations cliniques différentes », précise M. Shapiro.
 
 « Les chercheurs n’ont trouvé aucune association entre les mutations qu’ils ont observées dans le virus affectant les 112 patients et les manifestations cliniques de ces mêmes patients. Cela ne veut toutefois pas dire qu’avec un plus grand échantillon de données, on ne trouvera pas d’effets. Il est également possible que surviennent éventuellement des mutations qui changeront les caractéristiques du virus, et pour cette raison, il est important de continuer à faire ce genre de surveillance », souligne-t-il."
-Sun Newspapers,"CDC advises COVID-19 infected pet owners to limit contact, just in case",https://torontosun.com/news/national/cdc-advises-covid-19-infected-pet-owners-to-limit-contact-just-in-case,Possible Skew,,Quality News,,"The Centers for Disease Control and Prevention in Atlanta is advising people who are either sick with COVID-19, or feeling sick, to limit contact with their pets.
+Sun Newspapers,"CDC advises COVID-19 infected pet owners to limit contact, just in case",https://torontosun.com/news/national/cdc-advises-covid-19-infected-pet-owners-to-limit-contact-just-in-case,2.995732274,8,Quality News,6,"The Centers for Disease Control and Prevention in Atlanta is advising people who are either sick with COVID-19, or feeling sick, to limit contact with their pets.
 
 “We’re still learning about how #COVID19 affects animals, but it appears that people can spread the virus to animals in some situations,” said the CDC’s Twitter account, @CDCgov.
 
@@ -495,7 +507,7 @@ The agency also said “there is no evidence that animals play a significant rol
 The CDC also says some coronaviruses, such as canine and feline coronaviruses, infect only animals and not infect humans.
 
 The first U.S case of an animal testing positive for COVID-19 was a tiger at the Bronx Zoo and he was believed to have gotten it from an infected zookeeper."
-Journal de Quebec,Produits désinfectants: plusieurs cas d'empoisonnement,https://www.journaldequebec.com/2020/05/05/produits-desinfectants-plusieurs-cas-dempoisonnement,Possible Skew,,Quality News,,"La pandémie de la COVID‐19 a entraîné une augmentation des cas d'empoisonnement involontaire liés aux nombreux produits désinfectants. 
+Journal de Quebec,Produits désinfectants: plusieurs cas d'empoisonnement,https://www.journaldequebec.com/2020/05/05/produits-desinfectants-plusieurs-cas-dempoisonnement,3.091042453,4,Quality News,8,"La pandémie de la COVID‐19 a entraîné une augmentation des cas d'empoisonnement involontaire liés aux nombreux produits désinfectants. 
 
 Santé Canada sonne l’alarme et met en garde les Canadiens contre les risques d'empoisonnement liés à l'utilisation inappropriée de désinfectants pour les mains, de produits d'entretien ménager et de produits javellisants. 
 
@@ -515,7 +527,7 @@ CE QUE VOUS DEVEZ FAIRE
 Lisez et suivez toujours les directives sur l'étiquette du produit. 
 Limitez la propagation de la COVID‐19 en vous lavant les mains fréquemment avec de l'eau et du savon pendant au moins 20 secondes. Si cela n'est pas possible, utilisez un désinfectant pour les mains qui contient au moins 60% d'alcool et qui a été approuvé par Santé Canada. 
 Vérifiez si un produit et ses allégations ont été autorisés à la vente par Santé Canada.  "
-Toronto Star,BC Ferries to resume service between Nanaimo and Vancouver at half capacity,https://www.thestar.com/news/canada/2020/05/25/bc-ferries-to-resume-service-between-nanaimo-and-vancouver-at-half-capacity.html,Possible Skew,,Quality News,,"VANCOUVER—BC Ferries is set to resume service between Horseshoe Bay in West Vancouver and Departure Bay in Nanaimo after COVID-19 forced the route’s suspension in early April.
+Toronto Star,BC Ferries to resume service between Nanaimo and Vancouver at half capacity,https://www.thestar.com/news/canada/2020/05/25/bc-ferries-to-resume-service-between-nanaimo-and-vancouver-at-half-capacity.html,3.17805383,5,Quality News,8,"VANCOUVER—BC Ferries is set to resume service between Horseshoe Bay in West Vancouver and Departure Bay in Nanaimo after COVID-19 forced the route’s suspension in early April.
 
 The ferry service says there will be four round-trip sailings every day starting June 3.
 
@@ -528,7 +540,7 @@ It says the resumption of service at Horseshoe Bay means service to Snug Cove an
 BC Ferries announced the 60-day suspension of service between Horseshoe Bay and Departure Bay on April 3 in response to the pandemic.
 
 The company says it will strictly adhere to health and safety guidelines from B.C. health officials as well as Transport Canada as it gradually resume its services."
-Huffington Post,Trudeau To Push Provinces On Paid Sick Leave After Pressure From NDP,https://www.huffingtonpost.ca/entry/trudeau-paid-sick-leave-ndp_ca_5ecbef9ec5b6c18b30fa6dd6,Possible Skew,,Fair interpretations of the news,,"OTTAWA — Jagmeet Singh says Prime Minister Justin Trudeau’s promise to work with provinces to give workers paid sick leave is a good start, but more action is needed before federal New Democrats will agree to suspend full sittings of the House of Commons through the summer.
+Huffington Post,Trudeau To Push Provinces On Paid Sick Leave After Pressure From NDP,https://www.huffingtonpost.ca/entry/trudeau-paid-sick-leave-ndp_ca_5ecbef9ec5b6c18b30fa6dd6,3.258096538,7,Fair interpretations of the news,4,"OTTAWA — Jagmeet Singh says Prime Minister Justin Trudeau’s promise to work with provinces to give workers paid sick leave is a good start, but more action is needed before federal New Democrats will agree to suspend full sittings of the House of Commons through the summer.
 
 The back and forth over paid sick leave Monday came as a small number of MPs debated a Liberal government motion proposing to waive “normal” Commons sittings in favour of expanding the special COVID-19 committee that has acted as a stand-in for the past month.
 
@@ -549,7 +561,7 @@ Yet Singh said the promise fell short of the NDP’s demands.
 The NDP leader had previously suggested the federal government use the Canada Emergency Response Benefit or employment insurance to deliver paid sick leave immediately and work with the provinces to secure two weeks of leave even after the pandemic is over.
 
 The government must also make good on a promise to provide more support to Canadians with disabilities who are struggling during the pandemic, Singh said."
-Journal de Montreal,«Bonne nouvelle» pour la recherche d’un vaccin,https://www.journaldemontreal.com/2020/05/25/bonne-nouvelle-pour-la-recherche-dun-vaccin,Possible Skew,,Quality News,,"Les patients guéris de la COVID-19 développent une réponse immunitaire semblable à celle que veulent recréer de nombreux scientifiques en quête d’un vaccin, d’après des chercheurs américains qui y voient donc une «bonne nouvelle» pour le développement d’un vaccin. 
+Journal de Montreal,«Bonne nouvelle» pour la recherche d’un vaccin,https://www.journaldemontreal.com/2020/05/25/bonne-nouvelle-pour-la-recherche-dun-vaccin,3.33220451,4,Quality News,8,"Les patients guéris de la COVID-19 développent une réponse immunitaire semblable à celle que veulent recréer de nombreux scientifiques en quête d’un vaccin, d’après des chercheurs américains qui y voient donc une «bonne nouvelle» pour le développement d’un vaccin. 
 
 Après avoir analysé le sang de 20 adultes qui ont combattu avec succès la maladie, les chercheurs de l’institut californien en immunologie de La Jolla ont conclu que le système immunitaire du corps humain reconnaît bel et bien le coronavirus SARS-CoV-2, qui cause la COVID-19. 
 
@@ -567,7 +579,7 @@ Immunité croisée
 Fait intéressant, dans cette étude publiée il y a une dizaine de jours par la revue Cell, les chercheurs ont aussi analysé 20 autres échantillons recueillis de 2015 à 2018, soit bien avant le début de l’actuelle pandémie. Pourtant, entre 40 et 60 % de ces individus étaient porteurs de cellules immunitaires réagissant contre le SARS-CoV-2. 
 
 Cela alimente l’hypothèse de «l’immunité croisée», qui fait débat à l’heure actuelle dans la communauté scientifique et médicale, voulant qu’une infection antérieure à d’autres coronavirus – qui causent, eux, des rhumes bénins – fournisse une protection contre la COVID-19 à certaines personnes. «Ce n’est pas clair encore» que cela est possible, relativisent cependant les auteurs californiens."
-Maclean's,The incalculable rise of hydroxychloroquine,https://www.macleans.ca/society/health/the-incalculable-rise-of-hydroxychloroquine/,Possible Skew,,Fair interpretations of the news,,"In early April, Sonja Gill, rheumatologist based in Oakville, Ont., began to get shaky inquiries from some of the patients she treats who suffer from lupus or rheumatoid arthritis. They’d sought to fill routine prescriptions for hydroxychloroquine, an anti-malarial drug that quiets the symptoms of these two auto-immune conditions, but their pharmacists were saying they had none.
+Maclean's,The incalculable rise of hydroxychloroquine,https://www.macleans.ca/society/health/the-incalculable-rise-of-hydroxychloroquine/,3.401197382,3,Fair interpretations of the news,8.00,"In early April, Sonja Gill, rheumatologist based in Oakville, Ont., began to get shaky inquiries from some of the patients she treats who suffer from lupus or rheumatoid arthritis. They’d sought to fill routine prescriptions for hydroxychloroquine, an anti-malarial drug that quiets the symptoms of these two auto-immune conditions, but their pharmacists were saying they had none.
 
 “We’ve had call after call,’’ says Gill, who estimates that 70 per cent of her 1,500-patient practice are on hydroxychloroquine. She asked her administrative assistant to beat the bushes with pharmacies and wholesalers to find supplies. 
 
@@ -632,7 +644,7 @@ Stories about other premature findings—the latest being news reports that Mode
 This dynamic has prompted concern to ripple through the highest echelons of the medical research establishment. “The pandemic will inevitably leave considerable morbidity, mortality, and loss in its wake,” the New England Journal of Medicine opined. “Damage to the country’s medication-assessment process—and the public’s respect for it—should not be part of its legacy.”
 
 In the meantime, rheumatologist Sonja Gill is just hoping that her patients won’t have to face yet another round of unnerving shortages triggered by the viral spread of research results that have yet to be exposed to proper scientific scrutiny. "
-Radio-Canada,Un certificat pour les survivants de la COVID-19,https://ici.radio-canada.ca/nouvelle/1706045/coronavirus-covid-gueri-guerison-chsld?depuisRecherche=true,Most Neutral,,Quality News,,"Malgré les mauvaises nouvelles et les morts qui s’accumulent dans les CHSLD de la province, une initiative a vu le jour à Montréal afin de raviver l'optimisme des aînés en venant souligner la guérison des résidents atteints de la COVID-19.
+Radio-Canada,Un certificat pour les survivants de la COVID-19,https://ici.radio-canada.ca/nouvelle/1706045/coronavirus-covid-gueri-guerison-chsld?depuisRecherche=true,3.465735903,3,Quality News,8,"Malgré les mauvaises nouvelles et les morts qui s’accumulent dans les CHSLD de la province, une initiative a vu le jour à Montréal afin de raviver l'optimisme des aînés en venant souligner la guérison des résidents atteints de la COVID-19.
 
 Il s’agit d’un certificat à coller sur la porte des résidents des 17 CHSLD du territoire du CIUSSS du Centre-Sud-de-l'Île-de-Montréal et sur lequel est inscrite la mention J’ai vaincu la COVID-19!.
 
@@ -650,7 +662,7 @@ Stéphanie Langevin, microbiologiste-infectiologue à l'Hôpital Notre-Dame
 Avec son fils de 11 ans, elle a donc conçu une affiche à coller sur la porte de ceux qui ont guéri de la maladie. Et voilà que l’initiative s’est implantée un peu partout dans les établissements du CIUSSS.
 
 J’ai appris que certains ont eu l’initiative de carrément les remettre aux résidents. C’est une super-idée. Les gens vont en garder un souvenir et pourront éventuellement le montrer à leurs proches, se réjouit-elle."
-CBC,Ontario won't specify COVID-19 'hotspots' even as premier urges testing,https://www.cbc.ca/news/canada/toronto/covid-hotspots-ontario-testing-1.5583679,Most Neutral,,Quality News,,"Premier Doug Ford is pleading with people who live in Ontario's COVID-19 ""hotspots"" to get tested for the virus — but officials won't specify which neighbourhoods have been hardest hit.
+CBC,Ontario won't specify COVID-19 'hotspots' even as premier urges testing,https://www.cbc.ca/news/canada/toronto/covid-hotspots-ontario-testing-1.5583679,3.526360525,3,Quality News,8,"Premier Doug Ford is pleading with people who live in Ontario's COVID-19 ""hotspots"" to get tested for the virus — but officials won't specify which neighbourhoods have been hardest hit.
 
 Ford mentioned the province's coronavirus hotspots multiple times during his daily news conference Monday. He said the government is able to measure them by postal code, and that some areas are ""lighting up like a Christmas tree.""
 
@@ -694,7 +706,7 @@ Fisman also said that health units in particularly affected areas need help to s
 
 ""I think this is about supporting vulnerable parts of the GTA so that we can get this done."""
 La Presse,"
-Relance post-COVID: plaidoyer pour la planète signé par 40 millions de soignants",https://www.lapresse.ca/affaires/economie/202005/25/01-5274981-relance-post-covid-plaidoyer-pour-la-planete-signe-par-40-millions-de-soignants.php,Most Neutral,,Fair interpretations of the news,,"Car la COVID-19 a démontré un fait percutant, affirment-ils : l’économie souffre quand la santé humaine est compromise.
+Relance post-COVID: plaidoyer pour la planète signé par 40 millions de soignants",https://www.lapresse.ca/affaires/economie/202005/25/01-5274981-relance-post-covid-plaidoyer-pour-la-planete-signe-par-40-millions-de-soignants.php,3.583518938,3,Fair interpretations of the news,8,"Car la COVID-19 a démontré un fait percutant, affirment-ils : l’économie souffre quand la santé humaine est compromise.
 
 Ils estiment que les dirigeants des économies les plus développées du monde doivent saisir l’occasion afin de préserver la santé de la planète, ce qui assurera celle de ses habitants.
 
@@ -719,7 +731,7 @@ Pour eux, cela signifie investir entre autres dans des énergies renouvelables, 
 Les communautés médicales et scientifiques devraient d’ailleurs être impliquées dans le développement des mesures de relance.
 
 De la même manière que les gouvernements ont écouté les scientifiques et les professionnels de la santé pour affronter la COVID-19, ils doivent faire de même pour la crise climatique, écrivent-ils."
-iPolitics,Updated federal poverty line delayed due to COVID-19,https://ipolitics.ca/2020/05/22/updated-federal-poverty-line-delayed-due-to-covid-19/,Most Neutral,,Quality News,,"Efforts to redraw Canada’s official poverty line have been delayed due to the COVID-19 pandemic.
+iPolitics,Updated federal poverty line delayed due to COVID-19,https://ipolitics.ca/2020/05/22/updated-federal-poverty-line-delayed-due-to-covid-19/,3.63758616,2,Quality News,8,"Efforts to redraw Canada’s official poverty line have been delayed due to the COVID-19 pandemic.
 
 While the review period for the poverty line was scheduled to end in June 2020, with the revised measure ready to be used shortly after, Statistics Canada says the pandemic has made it difficult to receive feedback from experts, stakeholders and officials from different levels of government.
 
@@ -744,7 +756,7 @@ Frayne said following the review period, Statistics Canada will expedite publica
 He added the release of the new poverty line will “provide important contextual information on the situations of Canadians prior to the COVID pandemic.”
 
 While a bump in the official poverty rate is expected once the new measure is used, the pandemic has hit Canadians working lower wage jobs particularly hard, meaning some of the real gains in reducing poverty under the Liberal government could be erased if economic recovery efforts exclude them."
-Hill Times,"Focus on pandemic response, Trudeau tells MPs, as Parliamentarians discuss how to proceed during COVID-19 crisis",https://www.hilltimes.com/2020/05/25/focus-on-pandemic-response-trudeau-tells-mps-as-parliamentarians-discuss-how-to-proceed-during-covid-19-crisis/249765,Most Neutral,,Quality News,,"As the House returns to debate a motion on how to proceed amid the COVID-19 pandemic, there is a “need” for MPs to stay focused on responding to the fallout of the pandemic instead of other priorities, says Prime Minister Justin Trudeau. 
+Hill Times,"Focus on pandemic response, Trudeau tells MPs, as Parliamentarians discuss how to proceed during COVID-19 crisis",https://www.hilltimes.com/2020/05/25/focus-on-pandemic-response-trudeau-tells-mps-as-parliamentarians-discuss-how-to-proceed-during-covid-19-crisis/249765,3.688879454,2,Quality News,9,"As the House returns to debate a motion on how to proceed amid the COVID-19 pandemic, there is a “need” for MPs to stay focused on responding to the fallout of the pandemic instead of other priorities, says Prime Minister Justin Trudeau. 
 
 “Work still continues throughout the government on important non-COVID priorities, but right now, in Parliament, the focus needs to be on the crisis that has taken over almost every aspect of Canadians’ lives and of our economy,” Mr. Trudeau (Papineau, Que.) said in his daily briefing to reporters on Monday.
 
@@ -778,7 +790,7 @@ Bloc Québécois Leader Yves-François Blanchet (Beloeil—Chambly, Que.) on Mon
 
 Mr. Trudeau refused to say if when the program and criteria were designed, it was done so in anticipation that political parties would be among those applying."
 National Post,"
-Doing Good: Remy Cointreau donates $25,000 to bar staff in Canada struggling during COVID-19",https://nationalpost.com/news/doing-good-remy-cointreau-donates-25000-to-bar-staff-in-canada-struggling-during-covid-19,Most Neutral,,Quality News,,"One of the world’s leading maker of spirits has boosted a fund intended to help Canadian hospitality workers suffering hardship because of the COVID-19 pandemic.
+Doing Good: Remy Cointreau donates $25,000 to bar staff in Canada struggling during COVID-19",https://nationalpost.com/news/doing-good-remy-cointreau-donates-25000-to-bar-staff-in-canada-struggling-during-covid-19,3.737669618,3,Quality News,8,"One of the world’s leading maker of spirits has boosted a fund intended to help Canadian hospitality workers suffering hardship because of the COVID-19 pandemic.
 
 Remy Cointreau – maker of the Rémy Martin and Louis XIII cognacs, and Cointreau liqueur — has donated $25,000 to the Bartenders Benevolent Fund, in aid of hourly bartenders, servers and front of house support staff.
 
@@ -789,7 +801,7 @@ The French company previously made a similar donation, US$200,000, in March to t
 The Bartenders Benevolent Fund, created in 2013, has dispersed nearly $60,000 during the COVID-19 crisis.
 
 “The hospitality industry in Canada is more than just a group of professionals, it’s a community, one that is bolstered by the support of brands such as Rémy Cointreau,” said Jon Gray, co-founder of the benevolent fund."
-Globe and Mail,Canadian coronavirus vaccine candidate delivers promising results in animal tests,https://www.theglobeandmail.com/canada/article-canadian-vaccine-candidate-delivers-promising-results-in-animal-tests/,Most Neutral,,Quality News,,"Because of physical distancing, Darryl Falzarano and his colleagues couldn’t celebrate with a group hug when they completed a successful test of their candidate vaccine for COVID-19.
+Globe and Mail,Canadian coronavirus vaccine candidate delivers promising results in animal tests,https://www.theglobeandmail.com/canada/article-canadian-vaccine-candidate-delivers-promising-results-in-animal-tests/,3.784189634,2,Quality News,8,"Because of physical distancing, Darryl Falzarano and his colleagues couldn’t celebrate with a group hug when they completed a successful test of their candidate vaccine for COVID-19.
 
 Nor could they share their promising results with other colleagues at the University of Saskatchewan’s Vaccine and Infectious Disease Organizaton-International Vaccine Centre, since they are the only scientists allowed to come to work in the Saskatoon-based facility.
 
@@ -822,7 +834,7 @@ After the candidate vaccine was developed in March, the team administered it to 
 Medicago’s president and chief executive officer, Bruce Clark, said his company’s vaccine was tested in mice, which also generated antibodies. Further tests are needed to determine if those antibodies can neutralize the novel coronavirus. But Dr. Clark, who holds a PhD in biochemistry, said he was encouraged that the mice produced antibodies within 10 days after one shot of the vaccine. This suggests that if the vaccine is effective in humans, its immunizing effects will emerge quickly, he said.
 
 “When you have as serious a disease as COVID, you don’t want something that’s going to take three months to generate the maximum response,” Dr. Clark added."
-CTV,Will the COVID-19 pandemic lead to a permanent revolution in working from home?,https://www.ctvnews.ca/business/will-the-covid-19-pandemic-lead-to-a-permanent-revolution-in-working-from-home-1.4954518,Most Neutral,,Quality News,,"As tech companies across the country begin to offer more long-term work-from-home options, experts believe there will still be a role for the traditional office space in the future.
+CTV,Will the COVID-19 pandemic lead to a permanent revolution in working from home?,https://www.ctvnews.ca/business/will-the-covid-19-pandemic-lead-to-a-permanent-revolution-in-working-from-home-1.4954518,3.828641396,1,Quality News,8,"As tech companies across the country begin to offer more long-term work-from-home options, experts believe there will still be a role for the traditional office space in the future.
 
 In April, a Statistics Canada survey indicated that 4.7 million Canadians began to work remotely as part of measures meant to limit the spread of COVID-19, while another 2.1 million Canadians were already working from home before the outbreak began.
 
@@ -851,7 +863,7 @@ That said, a reduced reliance on office spaces could be a big problem for cities
 “When the rent starts to decline the leases stop renewing at the same rate then that valuation of properties may go down,” said Murtaza Haider, professor of real estate management at Ryerson University.
 
 In Toronto, the municipal government collects more than $4.5 billion annually in property taxes, nearly half of which is from companies."
-Global News,Overcrowded parks may cause coronavirus flare-ups but real risk lies indoors: experts,https://globalnews.ca/news/6980106/trinity-bellwoods-coronavirus-flare-ups/,Most Neutral,,Quality News,,"After images and videos surfaced of thousands flocking to Trinity Bellwoods Park in Toronto, there was public outrage and pleas from officials urging people to adhere to social distancing rules to avoid a more severe second wave of the coronavirus.
+Global News,Overcrowded parks may cause coronavirus flare-ups but real risk lies indoors: experts,https://globalnews.ca/news/6980106/trinity-bellwoods-coronavirus-flare-ups/,3.871201011,2,Quality News,8,"After images and videos surfaced of thousands flocking to Trinity Bellwoods Park in Toronto, there was public outrage and pleas from officials urging people to adhere to social distancing rules to avoid a more severe second wave of the coronavirus.
 
 Possible outdoor transmission may not be a major driver of a second COVID-19 wave, but experts interviewed by Global News said it could make future outbreaks more extreme.
 Dr. Alon Vaisman, an infection control and infectious diseases physician at Toronto’s University Health Network, said what happened at Trinity Bellwoods was troubling but transmissions are more likely to occur indoors, where a majority of outbreaks in Canada have been detected so far.
