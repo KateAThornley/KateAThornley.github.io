@@ -1,8 +1,22 @@
 /* ------- STYLING FOR HOME AND ABOUT PAGE ------- */
+
+.parallax {
+  /* The image used */
+  background-image: url(../assets/headerimg.png);
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #8aa1b1;
+  background-color: #f9f9f9;
   font-family: "Alegreya Sans SC";
 }
 
@@ -80,12 +94,14 @@ body {
 
 .mainContent {
   justify-content: center;
-  max-width: 69%;
+  float: left;
+  margin-left: 40px;
 }
 
 .sidebar {
   float: right;
   min-height: 100%;
+  max-height: 900px;
   width: 30%;
   background-color: #fff;
   z-index: 1; /* Stay on top */
@@ -93,9 +109,11 @@ body {
   left: 0;
   overflow: scroll;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-right: 40px;
+  margin-top: 30px;
   border-radius: 20px;
 }
 
