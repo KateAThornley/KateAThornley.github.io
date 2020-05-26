@@ -13,6 +13,11 @@
   background-size: contain;
 }
 
+a {
+  text-decoration: none;
+  color: #6e3526;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
