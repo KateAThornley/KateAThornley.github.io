@@ -1,28 +1,40 @@
 var ctx = document.getElementById('myChart');
 
+ctx.onclick = function (evt) {
+	var activePoints = myChart.getElementsAtEvent(evt);
+	console.log(activePoints[0]._index);
+};
+
 var myChart = new Chart(ctx, {
 	type: 'scatter',
 	data: {
 		datasets: [{
-			label: 'Scatter Dataset',
+			label: ['Scatter Dataset'],
 			data: [{
-				x: -10,
-				y: 0,
-				label: 'test'
+				// Label for the tooltip
+				label: 'test',
+				// Value for the tooltip
+				value: 'string',
+				x: 5,
+				y: 0
 			}, {
+				// Label for the tooltip
+				label: 'test',
+				// Value for the tooltip
+				value: 'string',
 				x: 0,
 				y: 10
 			}, {
+				// Label for the tooltip
+				label: 'test',
+				// Value for the tooltip
+				value: 'string',
 				x: 10,
 				y: 5
 			}]
 		}]
 	},
 	options: {
-		tooltips: {
-			mode: 'index'
-		},
-		events: ['click'],
 		scales: {
 			xAxes: [{
 				type: 'linear',
