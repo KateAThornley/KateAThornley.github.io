@@ -16,7 +16,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fbf1ee;
   font-family: "Alegreya Sans SC";
 }
 
@@ -47,13 +47,13 @@ body {
 /* Change the color of links on hover */
 .topnav a:hover {
   /* background-color: #ddd; */
-  color: #58a4b5;
+  color: #f46036;
 }
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
   /* background-color: #58a4b5; */
-  color: #58a4b5;
+  color: #f46036;
 }
 
 /* Style the search box inside the navigation bar */
@@ -149,7 +149,7 @@ body {
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 20px solid #faa275;
+  border-left: 20px solid #fbf1ee;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }
@@ -163,11 +163,4 @@ body {
   border-left: 20px solid #f46036;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-}
-
-.pitch {
-  background-color: #faa275;
-  margin-top: 40px;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
