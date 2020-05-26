@@ -267,8 +267,8 @@ var h2 = document.createElement("h2");
 var newsCon = document.getElementsByClassName("conCon")[0];
 var p = document.createElement("p");
 
-var newsCon = document.getElementsByClassName("conLink")[0];
-var p1 = document.createElement("p1");
+var newsLink = document.getElementsByClassName("conLink")[0];
+var a = document.createElement("a");
 
 ctx.onclick = function (evt) {
 	var activePoints = myChart.getElementsAtEvent(evt);
@@ -280,8 +280,10 @@ ctx.onclick = function (evt) {
 
 	p.innerHTML = sources[activePoints[0]._index].ArticleText;
 	newsCon.append(p);
-	p1.innerHTML = sources[activePoints[0]._index].URL;
-	newsCon.append(p1);
+
+	a.href = sources[activePoints[0]._index].URL;
+	a.innerHTML = "Link";
+	newsLink.append(a);
 };
 
 var id;
