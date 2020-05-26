@@ -24,8 +24,19 @@
       <input
         style="width: 40%; padding-top: 6px;"
         type="text"
-        placeholder="  Search.."
+        placeholder="Search.."
+        id="input"
       />
+      <script>
+        document.getElementById("input").onkeypress = function (event) {
+          if (event.keyCode == 13 || event.which == 13) {
+            var script = document.createElement("script");
+            script.src = "scripts/main.js";
+            script.type = "text/javascript";
+            document.body.parentNode.appendChild(script);
+          }
+        };
+      </script>
     </div>
 
     <script src="scripts/topNav.js"></script>
