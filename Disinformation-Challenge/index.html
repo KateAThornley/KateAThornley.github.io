@@ -7,13 +7,24 @@
     />
     <meta charset="utf-8" />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    
   </head>
   <body>
     <div class="topnav">
       <a class="active" href="#home">Home</a>
       <a href="#about">About</a>
-      <input type="text" placeholder="Search.." />
+      <input type="text" placeholder="Search.." id="input"/>
+      <script>
+      document.getElementById("input").onkeypress = function(event){
+          if (event.keyCode == 13 || event.which == 13){
+            var script = document.createElement('script');
+            script.src = 'scripts/main.js';
+            script.type = 'text/javascript';
+            document.body.parentNode.appendChild(script);
+          }
+      };
+    </script>
     </div>
 
     <script src="scripts/topNav.js"></script>
