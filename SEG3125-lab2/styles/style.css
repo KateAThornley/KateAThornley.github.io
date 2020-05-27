@@ -1,0 +1,25 @@
+body {
+  font-family: "B612";
+  font-size: 22px;
+  width: 100vw;
+  background-color: rgb(149, 177, 164);
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  background-image: url(../assets/banner.png);
+  height: 250px;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  box-shadow: 0px 0px 10px 10px #767676;
+}
+
+.footer {
+  text-align: center;
+  color: black;
+  padding-top: 30px;
+  font-size: 18px;
+}
