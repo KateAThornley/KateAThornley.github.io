@@ -33,7 +33,50 @@
         groceries!
       </div>
     </div>
+
+    <div class="content">
+      <div class="tab">
+        <button class="tablinks" openInfo="openCity(event, 'Client')">
+          Client
+        </button>
+        <button class="tablinks" openInfo="openCity(event, 'Products')">
+          Products
+        </button>
+        <button class="tablinks" openInfo="openCity(event, 'Cart')">
+          Cart
+        </button>
+      </div>
+
+      <div id="Client" class="tabcontent">
+        <h3>Client Information</h3>
+        <p>
+          Tell us a little about yourself so we can make your shopping
+          experience more efficient.<br />ADD DROP DOWN TO CHOOSE: vegitarian,
+          alergic to gluten, organic veggies
+        </p>
+      </div>
+
+      <div id="Products" class="tabcontent">
+        <h3>Your Targeted Products</h3>
+        <p>
+          We preselected these products based on your restrictions.<br />Choose
+          the items you would like to buy:<br />ADD CHECKBOXES FOR TEN ITEMS
+          WITH 'ADD SELECTED ITEMS TO CART' BUTTON
+        </p>
+      </div>
+
+      <div id="Cart" class="tabcontent">
+        <h3>Cart</h3>
+        <p>Review your cart here.<br>You selected:<br>
+        <div class="finalProds">
+        </div>
+        </p>
+      </div>
+    </div>
+    <script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
   </body>
+  
   <div class="footer">
     <footer>
       <i>
