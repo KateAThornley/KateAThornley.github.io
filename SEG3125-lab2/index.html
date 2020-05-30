@@ -34,49 +34,59 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="tab">
-        <button class="tablinks" openInfo="openCity(event, 'Client')">
-          Client
-        </button>
-        <button class="tablinks" openInfo="openCity(event, 'Products')">
-          Products
-        </button>
-        <button class="tablinks" openInfo="openCity(event, 'Cart')">
-          Cart
-        </button>
-      </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'Client')">
+        Client
+      </button>
+      <button class="tablinks" onclick="openInfo(event, 'Products')">
+        Products
+      </button>
+      <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
 
-      <div id="Client" class="tabcontent">
-        <h3>Client Information</h3>
-        <p>
-          Tell us a little about yourself so we can make your shopping
-          experience more efficient.<br />ADD DROP DOWN TO CHOOSE: vegitarian,
-          alergic to gluten, organic veggies
-        </p>
-      </div>
+    <div id="Client" style="padding-bottom: 40px;" class="tabcontent">
+      <p>Tell us a bit about yourself.</p>
+      Choose a dietary restriction:<br /><br />
+      <select
+        multiple
+        id="dietSelect"
+        name="dietSelect"
+        onchange="populateListProductChoices(this.id, 'displayProduct')"
+      >
+        <option value="None">None</option>
+        <option value="Vegetarian">Vegetarian Products</option>
+        <option value="GlutenFree">Gluten Free Products</option>
+        <option value="Organic">Organic Products</option>
+      </select>
+    </div>
 
-      <div id="Products" class="tabcontent">
-        <h3>Your Targeted Products</h3>
-        <p>
-          We preselected these products based on your restrictions.<br />Choose
-          the items you would like to buy:<br />ADD CHECKBOXES FOR TEN ITEMS
-          WITH 'ADD SELECTED ITEMS TO CART' BUTTON
-        </p>
-      </div>
+    <div id="Products" style="padding-bottom: 40px;" class="tabcontent">
+      <h3>Our Products:</h3>
+      <p>
+        Here are the items that we've selected for you based on your dietary
+        restrictions
+      </p>
+      Choose items to buy:
+      <div id="displayProduct"></div>
+      <button
+        id="addCart"
+        type="button"
+        class="block"
+        onclick="selectedItems()"
+      >
+        Add to cart
+      </button>
+    </div>
 
-      <div id="Cart" class="tabcontent">
-        <h3>Cart</h3>
-        <p>Review your cart here.<br>You selected:<br>
-        <div class="finalProds">
-        </div>
-        </p>
-      </div>
+    <div id="Cart" style="padding-bottom: 40px;" class="tabcontent">
+      <h3>Cart</h3>
+      <p>Here is your cart.</p>
+      <div id="displayCart"></div>
     </div>
     <script src="scripts/groceries.js"></script>
-<script src="scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
-  
+
   <div class="footer">
     <footer>
       <i>

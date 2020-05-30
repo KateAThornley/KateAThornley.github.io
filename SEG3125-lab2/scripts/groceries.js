@@ -1,84 +1,135 @@
-function openInfo(evt, tabName) {
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+// Array of products, each product is an object with different fieldset
+// A set of ingredients should be added to products
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+var products = [
+  {
+    name: "brocoli",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 1.99,
+  },
+  {
+    name: "bread",
+    vegetarian: true,
+    glutenFree: false,
+    organic: false,
+    price: 2.35,
+  },
+  {
+    name: "salmon",
+    vegetarian: false,
+    glutenFree: true,
+    organic: true,
+    price: 10.0,
+  },
+  {
+    name: "milk",
+    vegetarian: true,
+    glutenFree: true,
+    organic: false,
+    price: 4.0,
+  },
+  {
+    name: "ground beef",
+    vegetarian: false,
+    glutenFree: true,
+    organic: false,
+    price: 23.3,
+  },
+  {
+    name: "carrots",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 4.0,
+  },
+  {
+    name: "cookies",
+    vegetarian: true,
+    glutenFree: false,
+    organic: false,
+    price: 4.3,
+  },
+  {
+    name: "cake",
+    vegetarian: true,
+    glutenFree: false,
+    organic: false,
+    price: 12.0,
+  },
+  {
+    name: "eggs",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 5.64,
+  },
+  {
+    name: "avacados",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 2.99,
+  },
+  {
+    name: "chicken",
+    vegetarian: false,
+    glutenFree: true,
+    organic: false,
+    price: 20.89,
+  },
+  {
+    name: "potato",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 0.99,
+  },
+  {
+    name: "rice",
+    vegetarian: true,
+    glutenFree: true,
+    organic: false,
+    price: 2.99,
+  },
+];
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+// given restrictions provided, make a reduced list of products
+// prices should be included in this list, as well as a sort based on price
 
-// generate a checkbox list from a list of products
-// it makes each product name as the label for the checkbos
-
-function populateListProductChoices(slct1, slct2) {
-  var s1 = document.getElementById(slct1);
-  var s2 = document.getElementById(slct2);
-
-  // s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-  s2.innerHTML = "";
-
-  // obtain a reduced list of products based on restrictions
-  var optionArray = restrictListProducts(products, s1.value);
-
-  // for each item in the array, create a checkbox element, each containing information such as:
-  // <input type="checkbox" name="product" value="Bread">
-  // <label for="Bread">Bread/label><br>
-
-  for (i = 0; i < optionArray.length; i++) {
-    var productName = optionArray[i];
-    // create the checkbox and add in HTML DOM
-    var checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.name = "product";
-    checkbox.value = productName;
-    s2.appendChild(checkbox);
-
-    // create a label for the checkbox, and also add in HTML DOM
-    var label = document.createElement("label");
-    label.htmlFor = productName;
-    label.appendChild(document.createTextNode(productName));
-    s2.appendChild(label);
-
-    // create a breakline node and add in HTML DOM
-    s2.appendChild(document.createElement("br"));
-  }
-}
-
-// This function is called when the "Add selected items to cart" button in clicked
-// The purpose is to build the HTML to be displayed (a Paragraph)
-// We build a paragraph to contain the list of selected items, and the total price
-
-function selectedItems() {
-  var ele = document.getElementsByName("product");
-  var chosenProducts = [];
-
-  var c = document.getElementById("displayCart");
-  c.innerHTML = "";
-
-  // build list of selected item
-  var para = document.createElement("P");
-  para.innerHTML = "You selected : ";
-  para.appendChild(document.createElement("br"));
-  for (i = 0; i < ele.length; i++) {
-    if (ele[i].checked) {
-      para.appendChild(document.createTextNode(ele[i].value));
-      para.appendChild(document.createElement("br"));
-      chosenProducts.push(ele[i].value);
+function restrictListProducts(prods, restriction) {
+  let product_names = [];
+  let product_prices = [];
+  for (let i = 0; i < prods.length; i += 1) {
+    if (restriction == "None") {
+      product_names.push(prods[i].name);
+      product_prices.push(prods[i].price);
+    } else if (restriction == "Vegetarian" && prods[i].vegetarian == true) {
+      console.log("IN VEGGIE");
+      product_names.push(prods[i].name);
+      product_prices.push(prods[i].price);
+    } else if (restriction == "GlutenFree" && prods[i].glutenFree == true) {
+      console.log("IN GF");
+      product_names.push(prods[i].name);
+      product_prices.push(prods[i].price);
+    } else if (restriction == "Organic" && prods[i].organic == true) {
+      console.log("IN ORGANIC");
+      product_names.push(prods[i].name);
+      product_prices.push(prods[i].price);
     }
   }
 
-  // add paragraph and total price
-  c.appendChild(para);
-  c.appendChild(
-    document.createTextNode("Total Price is " + getTotalPrice(chosenProducts))
-  );
+  return product_names;
+}
+
+// Calculate the total price of items, with received parameter being a list of products
+function getTotalPrice(chosenProducts) {
+  totalPrice = 0;
+  for (let i = 0; i < products.length; i += 1) {
+    if (chosenProducts.indexOf(products[i].name) > -1) {
+      totalPrice += products[i].price;
+    }
+  }
+  return totalPrice;
 }
