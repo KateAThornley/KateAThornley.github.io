@@ -3,6 +3,13 @@
 
 var products = [
   {
+    name: "potato",
+    vegetarian: true,
+    glutenFree: true,
+    organic: true,
+    price: 0.99,
+  },
+  {
     name: "brocoli",
     vegetarian: true,
     glutenFree: true,
@@ -17,11 +24,19 @@ var products = [
     price: 2.35,
   },
   {
-    name: "salmon",
-    vegetarian: false,
+    name: "rice",
+    vegetarian: true,
+    glutenFree: true,
+    organic: false,
+    price: 2.99,
+  },
+
+  {
+    name: "avacados",
+    vegetarian: true,
     glutenFree: true,
     organic: true,
-    price: 10.0,
+    price: 2.99,
   },
   {
     name: "milk",
@@ -29,13 +44,6 @@ var products = [
     glutenFree: true,
     organic: false,
     price: 4.0,
-  },
-  {
-    name: "ground beef",
-    vegetarian: false,
-    glutenFree: true,
-    organic: false,
-    price: 23.3,
   },
   {
     name: "carrots",
@@ -52,13 +60,6 @@ var products = [
     price: 4.3,
   },
   {
-    name: "cake",
-    vegetarian: true,
-    glutenFree: false,
-    organic: false,
-    price: 12.0,
-  },
-  {
     name: "eggs",
     vegetarian: true,
     glutenFree: true,
@@ -66,11 +67,27 @@ var products = [
     price: 5.64,
   },
   {
-    name: "avacados",
-    vegetarian: true,
+    name: "salmon",
+    vegetarian: false,
     glutenFree: true,
     organic: true,
-    price: 2.99,
+    price: 10.0,
+  },
+
+  {
+    name: "ground beef",
+    vegetarian: false,
+    glutenFree: true,
+    organic: false,
+    price: 23.3,
+  },
+
+  {
+    name: "cake",
+    vegetarian: true,
+    glutenFree: false,
+    organic: false,
+    price: 12.0,
   },
   {
     name: "chicken",
@@ -79,20 +96,6 @@ var products = [
     organic: false,
     price: 20.89,
   },
-  {
-    name: "potato",
-    vegetarian: true,
-    glutenFree: true,
-    organic: true,
-    price: 0.99,
-  },
-  {
-    name: "rice",
-    vegetarian: true,
-    glutenFree: true,
-    organic: false,
-    price: 2.99,
-  },
 ];
 
 // given restrictions provided, make a reduced list of products
@@ -100,20 +103,15 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
   let product_names = [];
-  let product_prices = [];
   for (let i = 0; i < prods.length; i += 1) {
     if (restriction == "None") {
       product_names.push(prods[i].name);
-      product_prices.push(prods[i].price);
     } else if (restriction == "Vegetarian" && prods[i].vegetarian == true) {
       product_names.push(prods[i].name);
-      product_prices.push(prods[i].price);
     } else if (restriction == "GlutenFree" && prods[i].glutenFree == true) {
       product_names.push(prods[i].name);
-      product_prices.push(prods[i].price);
     } else if (restriction == "Organic" && prods[i].organic == true) {
       product_names.push(prods[i].name);
-      product_prices.push(prods[i].price);
     }
   }
 
