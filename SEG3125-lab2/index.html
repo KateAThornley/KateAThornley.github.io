@@ -47,6 +47,7 @@
     <div id="Client" style="padding-bottom: 40px;" class="tabcontent">
       <p>Tell us a bit about yourself.</p>
       Choose a dietary restriction:<br /><br />
+
       <select
         multiple
         id="dietSelect"
@@ -66,8 +67,11 @@
         Here are the items that we've selected for you based on your dietary
         restrictions
       </p>
-      Choose items to buy:
-      <div id="displayProduct"></div>
+      Choose items to buy:<br />
+      <div
+        style="text-align: left; padding-left: 36%;"
+        id="displayProduct"
+      ></div>
       <button
         id="addCart"
         type="button"
@@ -81,7 +85,7 @@
     <div id="Cart" style="padding-bottom: 40px;" class="tabcontent">
       <h3>Cart</h3>
       <p>Here is your cart.</p>
-      <div id="displayCart"></div>
+      <div style="text-align: left; padding-left: 38%;" id="displayCart"></div>
     </div>
     <script src="scripts/groceries.js"></script>
     <script src="scripts/main.js"></script>

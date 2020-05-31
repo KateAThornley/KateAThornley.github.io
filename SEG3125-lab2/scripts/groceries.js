@@ -106,15 +106,12 @@ function restrictListProducts(prods, restriction) {
       product_names.push(prods[i].name);
       product_prices.push(prods[i].price);
     } else if (restriction == "Vegetarian" && prods[i].vegetarian == true) {
-      console.log("IN VEGGIE");
       product_names.push(prods[i].name);
       product_prices.push(prods[i].price);
     } else if (restriction == "GlutenFree" && prods[i].glutenFree == true) {
-      console.log("IN GF");
       product_names.push(prods[i].name);
       product_prices.push(prods[i].price);
     } else if (restriction == "Organic" && prods[i].organic == true) {
-      console.log("IN ORGANIC");
       product_names.push(prods[i].name);
       product_prices.push(prods[i].price);
     }

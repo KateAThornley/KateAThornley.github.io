@@ -65,9 +65,9 @@ body {
 .tabcontent {
   text-align: center;
   background-color: #f5e2a3;
-  /* margin-top: 40px;
+  margin-top: 40px;
   margin-bottom: 40px;
-  padding-bottom: 40px; */
+  padding-bottom: 40px;
   margin-left: 25%;
   border-radius: 20px;
   max-width: 50%;
