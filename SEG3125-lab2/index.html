@@ -29,8 +29,7 @@
           padding-top: 20px;
         "
       >
-        Move through the tabs below from left to right to shop for your
-        groceries!
+        Complete the steps below to quickly shop for your groceries!
       </div>
     </div>
 
@@ -45,8 +44,8 @@
     </div>
 
     <div id="Client" style="padding-bottom: 40px;" class="tabcontent">
-      <p>Tell us a bit about yourself.</p>
-      Choose a dietary restriction:<br /><br />
+      <p>Tell us a bit about yourself!</p>
+      Select all dietary preferences that apply to you:<br /><br />
 
       <select
         multiple
@@ -54,7 +53,7 @@
         name="dietSelect"
         onchange="populateListProductChoices(this.id, 'displayProduct')"
       >
-        <option value="None">None</option>
+        <option value="None">No Preference</option>
         <option value="Vegetarian">Vegetarian Products</option>
         <option value="GlutenFree">Gluten Free Products</option>
         <option value="Organic">Organic Products</option>
@@ -65,9 +64,9 @@
       <h3>Our Products:</h3>
       <p>
         Here are the items that we've selected for you based on your dietary
-        restrictions
+        preferences:
       </p>
-      Choose items to buy:<br />
+      Check off the items from the list below to add them to your cart:<br />
       <div
         style="text-align: left; padding-left: 36%;"
         id="displayProduct"
