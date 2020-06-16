@@ -1,0 +1,50 @@
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+h1 {
+  font-family: "Roboto";
+  color: aliceblue;
+  font-size: 30px;
+}
+h5 {
+  font-family: "Roboto";
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.parallax {
+  background-image: url(../assets/header.jpeg);
+  height: 250px;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+
+  /* box-shadow: 0px 0px 10px 10px #767676; */
+}
+
+body {
+  background-color: #293241;
+}
+
+.services {
+  background-color: #98c1d97a;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.experts {
+  background-color: #293241;
+}
+
+.nav.nav-tabs {
+  color: aliceblue;
+}
+
+.nav-link {
+  color: #293241;
+  font-weight: bold;
+}

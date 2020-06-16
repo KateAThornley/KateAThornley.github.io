@@ -1,0 +1,310 @@
+<!-- This file contains many elements adapted from the online tutorial -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- header.pmg taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reviewgeek.com%2F37523%2Fthe-4-excellent-youtube-channels-to-learn-bicycle-repair-from%2F&psig=AOvVaw3vVXd6EmCUOgIgdomIlVFa&ust=1592349549159000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiq8b76hOoCFQAAAAAdAAAAABAL -->
+<!-- service1.png taken from https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/young-woman-cleaning-her-bicycle-royalty-free-image-1587738966.jpg-->
+<!-- service2.png taken from https://www.rei.com/dam/morgan_102919_0303_remove_wheel.jpg-->
+<!-- service3.png taken from https://i.ytimg.com/vi/6ktT21QxYcQ/maxresdefault.jpg-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- The head should contain an appropriate title for your site -->
+  <head>
+    <title>Module 4 - Labo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="parallax">
+      <div
+        style="
+          text-align: center;
+          color: #293241;
+          font-size: 60px;
+          font-weight: bold;
+          padding-top: 60px;
+        "
+      >
+        Berry's Bike Repairs<br />
+      </div>
+      <div
+        style="
+          text-align: center;
+          color: #293241;
+          font-size: 20px;
+          font-weight: bold;
+          padding-top: 20px;
+        "
+      >
+        235 West Wellington, Ottawa, Ontario, K2G 2S5
+      </div>
+    </div>
+    <div class="services">
+      <h1>
+        Need a repair? We've got you covered.
+      </h1>
+      <h5 style="padding-top: 20px;">Check out our services below!</h5>
+
+      <ul
+        class="nav nav-tabs"
+        id="myTab"
+        role="tablist"
+        style="justify-content: center; padding-top: 20px;"
+      >
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Checkups</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Brake Tightening</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            Tire Replacements</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="row">
+            <div class="col" style="justify-content: right;">
+              <img
+                src="assets/service1.png"
+                style="max-height: 400px; padding-top: 40px;"
+              />
+            </div>
+            <div
+              class="col"
+              style="
+                text-align: left;
+                color: aliceblue;
+                padding-top: 40px;
+                margin-right: 40px;
+              "
+            >
+              <h2 style="color: #98c1d9; font-weight: bold;">
+                Seasonal Maintenance - 39.99
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
+                quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                Maecenas nec odio et ante tincidunt tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <div class="row">
+            <div class="col" style="justify-content: right;">
+              <img
+                src="assets/service3.png"
+                style="max-height: 400px; padding-top: 40px;"
+              />
+            </div>
+            <div
+              class="col"
+              style="
+                text-align: left;
+                color: aliceblue;
+                padding-top: 40px;
+                margin-right: 40px;
+              "
+            >
+              <h2 style="color: #98c1d9; font-weight: bold;">
+                Brake Maintenance - 29.00
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
+                quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                Maecenas nec odio et ante tincidunt tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          <div class="row">
+            <div class="col" style="justify-content: right;">
+              <img
+                src="assets/service2.png"
+                style="max-height: 400px; padding-top: 40px;"
+              />
+            </div>
+            <div
+              class="col"
+              style="
+                text-align: left;
+                color: aliceblue;
+                padding-top: 40px;
+                padding-top: 40px;
+                margin-right: 40px;
+              "
+            >
+              <h2 style="color: #98c1d9; font-weight: bold;">
+                Tire Maintenance - 49.50
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
+                quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                Maecenas nec odio et ante tincidunt tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="experts"
+      style="
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      "
+    >
+      <h1>
+        Check out our team.
+      </h1>
+      <h5 style="padding-top: 20px;">
+        Get to know the folks who keep your bike in check
+      </h5>
+      
+      <div class="row" style="justify-content: center;">
+      <div class="col">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="assets/man1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Timothy</h4>
+                <p class="card-text">Timothy has been fixing bikes since '93</p>
+                <!-- collapsible part -->
+                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                <div id="profile1" class="collapse p-3">
+                    <p>Timothy has been fixing bikes since '93</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col" >
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="assets/woman1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Sammy</h4>
+                <p class="card-text">Sammy's got a flare for making your ride fly</p>
+                <!-- collapsible part -->
+                <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                <div id="profile" class="collapse p-3">
+                    <p>Sammy's got a flare for making your ride fly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+      
+    </div>
+    </div>
+  </body>
+</html>
