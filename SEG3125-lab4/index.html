@@ -271,43 +271,167 @@
       <h5 style="padding-top: 20px;">
         Get to know the folks who keep your bike in check
       </h5>
-      
+
       <div class="row" style="align-items: center; padding-top: 40px;">
-      <div class="col d-flex justify-content-center">
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="assets/man1.png" alt="Card image" style="width:100%">
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 400px;">
+            <img
+              class="card-img-top"
+              src="assets/man1.png"
+              alt="Headshot of Timothy"
+              style="width: 100%;"
+            />
             <div class="card-body">
-                <h4 class="card-title">Timothy</h4>
-                <p class="card-text">Timothy has been fixing bikes since '93</p>
-                <!-- collapsible part -->
-                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See Profile</a>
-                <div id="profile1" class="collapse p-3">
-                    <p style="font-weight: normal;"> 
-                        quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-                        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, </p>
-                </div>
+              <h4 class="card-title">Timothy</h4>
+              <p class="card-text">Timothy has been fixing bikes since '93</p>
+              <!-- collapsible part -->
+              <a href="#profile1" class="btn btn-primary" data-toggle="collapse"
+                >See Profile</a
+              >
+              <div id="profile1" class="collapse p-3">
+                <p style="font-weight: normal;">
+                  quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                  fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                  justo,
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 400px;">
+            <img
+              class="card-img-top"
+              src="assets/woman1.png"
+              alt="Headshot of Sammy"
+              style="width: 100%;"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Sammy</h4>
+              <p class="card-text">
+                Sammy's got a flare for making your ride fly
+              </p>
+              <!-- collapsible part -->
+              <a href="#profile" class="btn btn-primary" data-toggle="collapse"
+                >See Profile</a
+              >
+              <div id="profile" class="collapse p-3">
+                <p style="font-weight: normal;">
+                  quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                  fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                  justo,
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col d-flex justify-content-center" >
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="assets/woman1.png" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <h4 class="card-title">Sammy</h4>
-                <p class="card-text">Sammy's got a flare for making your ride fly</p>
-                <!-- collapsible part -->
-                <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
-                <div id="profile" class="collapse p-3">
-                    <p style="font-weight: normal;">quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-                        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, </p>
+    </div>
+      <div>
+        <!-- Collapsible with multiple items - accordion -->
+        <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+        <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+        <!-- could work well.  You can use other patterns too.  This is just an example. -->
+        <div class="section3" style="text-align: center;">
+            <h1>
+                Come give us a visit.
+              </h1>
+              <h5 style="padding-top: 20px;">
+                Make an apointment by following the steps below.
+              </h5>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="card-link"
+                  data-toggle="collapse"
+                  href="#collapseService"
+                  >Choose a service</a
+                >
+              </div>
+              <div
+                id="collapseService"
+                class="collapse show"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>Select services you'd like for your next appointment</p>
+                  <div class="form-group" style="padding-left: 340px; padding-right:340px;">
+                   
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Checkups</option>
+                      <option>Brake Tightening</option>
+                      <option>Tire Replacements</option>
+                      
+                    </select>
+                  </div>
                 </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <a
+                    class="collapsed card-link"
+                    data-toggle="collapse"
+                    href="#collapseDate"
+                    >Choose a date</a
+                  >
+                </div>
+                <div
+                  id="collapseDate"
+                  class="collapse"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p>What date?</p>
+                    <!-- Bootstrap has various input components. Some examples are given here: -->
+                    <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                    <div class="form-group row">
+                      <label for="dateTimeInput" class="col-2 col-form-label"
+                        >Date and time</label
+                      >
+                      <div class="col-10">
+                        <input
+                          class="form-control"
+                          type="datetime-local"
+                          value="2011-08-19T13:45:00"
+                          id="dateTimeInput"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <a
+                    class="collapsed card-link"
+                    data-toggle="collapse"
+                    href="#collapseClientInfo"
+                    >Your info</a
+                  >
+                </div>
+                <div
+                  id="collapseClientInfo"
+                  class="collapse"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p>Your information so we can contact you</p>
+                    <p>Form to enter name, email, phone</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-</div>
-      
-    </div>
+      </div>
     </div>
   </body>
+  <div class="footer" style="color: aliceblue; text-align: center; padding-top: 20px; padding-bottom: 20px;">
+    <footer>
+      <i>
+        Website designed by Kate Thornley
+      </i>
+    </footer>
+  </div>
 </html>

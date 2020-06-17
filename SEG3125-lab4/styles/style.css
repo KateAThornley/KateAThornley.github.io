@@ -36,6 +36,10 @@ body {
   padding-bottom: 40px;
 }
 
+.section3 {
+  background-color: #98c1d97a;
+}
+
 .experts {
   background-color: #293241;
 }
@@ -47,4 +51,14 @@ body {
 .nav-link {
   color: #293241;
   font-weight: bold;
+}
+
+.btn.btn-primary {
+  background-color: aliceblue;
+  outline-color: aliceblue;
+  color: #293241;
+}
+
+.card-body {
+  background-color: #98c1d97a;
 }
