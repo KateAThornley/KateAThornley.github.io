@@ -289,7 +289,7 @@
                 >See Profile</a
               >
               <div id="profile1" class="collapse p-3">
-                <p style="font-weight: normal;">
+                <p style="font-weight: normal; text-align:left;">
                   quis, sem. Nulla consequat massa quis enim. Donec pede justo,
                   fringilla vel, aliquet nec, vulputate eget, arcu. In enim
                   justo,
@@ -316,7 +316,7 @@
                 >See Profile</a
               >
               <div id="profile" class="collapse p-3">
-                <p style="font-weight: normal;">
+                <p style="font-weight: normal; text-align:left;">
                   quis, sem. Nulla consequat massa quis enim. Donec pede justo,
                   fringilla vel, aliquet nec, vulputate eget, arcu. In enim
                   justo,
@@ -332,7 +332,7 @@
         <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
         <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
         <!-- could work well.  You can use other patterns too.  This is just an example. -->
-        <div class="section3" style="text-align: center;">
+        <div class="section3" style="text-align: center; padding-left: 120px; padding-right: 120px; padding-bottom: 40px; padding-top:40px">
             <h1>
                 Come give us a visit.
               </h1>
@@ -382,12 +382,12 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p>What date?</p>
+                    <p>Appointment Schedule</p>
                     <!-- Bootstrap has various input components. Some examples are given here: -->
                     <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
-                    <div class="form-group row">
-                      <label for="dateTimeInput" class="col-2 col-form-label"
-                        >Date and time</label
+                    <div class="form-group row" style="text-align: center;">
+                      <label for="dateTimeInput" class="col-10 col-form-label"
+                        >Select a date and time for the appointment</label
                       >
                       <div class="col-10">
                         <input
@@ -407,7 +407,7 @@
                     class="collapsed card-link"
                     data-toggle="collapse"
                     href="#collapseClientInfo"
-                    >Your info</a
+                    >Contact Information</a
                   >
                 </div>
                 <div
@@ -416,8 +416,23 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p>Your information so we can contact you</p>
-                    <p>Form to enter name, email, phone</p>
+                    <p>Please enter your contact information so we can confirm your appointment </p>
+                    <form style="padding-left: 240px; padding-right:240px;">
+                       
+                        <div class="form-group" style="text-align: left;">
+                            <label for="exampleInputEmail1">Enter Name</label>
+                            <input type="name" class="form-control" id="exampleInputName" placeholder="Jane Doe">
+                          </div>
+                          <div class="form-group" style="text-align: left;"">
+                            <label for="exampleInputEmail1">Enter Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="john.doe@gmail.com">
+                          </div>
+                          <div class="form-group" style="text-align: left;"">
+                            <label for="exampleInputEmail1">Enter Phone Number</label>
+                            <input type="phone" class="form-control" id="exampleInputPhone" placeholder="666-666-6666">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                   </div>
                 </div>
               </div>
