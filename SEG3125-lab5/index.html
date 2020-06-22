@@ -11,7 +11,7 @@
 <html lang="en">
   <!-- The head should contain an appropriate title for your site -->
   <head>
-    <title>Module 4 - Labo</title>
+    <title>Module 5 - Lab</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -346,7 +346,7 @@
                   class="card-link"
                   data-toggle="collapse"
                   href="#collapseService"
-                  >Choose a service</a
+                  >Choose a Service</a
                 >
               </div>
               <div
@@ -370,10 +370,36 @@
               <div class="card">
                 <div class="card-header">
                   <a
+                    class="card-link"
+                    data-toggle="collapse"
+                    href="#collapseEmployee"
+                    >Choose a Technician</a
+                  >
+                </div>
+                <div
+                  id="collapseEmployee"
+                  class="collapse"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p>Select the technician you would like to have working on your bike.</p>
+                    <div class="form-group" style="padding-left: 340px; padding-right:340px;">
+                     
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Timothy</option>
+                        <option>Sammy</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              <div class="card">
+                <div class="card-header">
+                  <a
                     class="collapsed card-link"
                     data-toggle="collapse"
                     href="#collapseDate"
-                    >Choose a date</a
+                    >Choose a Date</a
                   >
                 </div>
                 <div
@@ -418,7 +444,6 @@
                   <div class="card-body">
                     <p>Please enter your contact information so we can confirm your appointment </p>
                     <form style="padding-left: 240px; padding-right:240px;">
-                       
                         <div class="form-group" style="text-align: left;">
                             <label for="exampleInputEmail1">Enter Name</label>
                             <input type="name" class="form-control" id="exampleInputName" placeholder="Jane Doe">
@@ -431,8 +456,35 @@
                             <label for="exampleInputEmail1">Enter Phone Number</label>
                             <input type="phone" class="form-control" id="exampleInputPhone" placeholder="666-666-6666">
                           </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+                         
+                      </form>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <a
+                    class="collapsed card-link"
+                    data-toggle="collapse"
+                    href="#collapsePayment"
+                    >Enter Payment</a
+                  >
+                </div>
+                <div
+                  id="collapsePayment"
+                  class="collapse"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <form style="padding-left: 240px; padding-right:240px;">
+                      <div class="form-group" style="text-align: left;">
+                         <p>We require you to enter your payment information below as there will be a $20 fee charged to your card upon cancelation</p>
+                        <div class="form-group" style="text-align: left;"">
+                          <label for="exampleInputEmail1">Enter Credit Card Number</label>
+                          <input type="phone" class="form-control" id="exampleInputPhone" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                   </div>
                 </div>
               </div>

@@ -62,3 +62,9 @@ body {
 .card-body {
   background-color: #98c1d97a;
 }
+
+.footer {
+  text-align: center;
+  color: black;
+  padding-top: 30px;
+}
