@@ -9,7 +9,7 @@ function validatePhone(txtPhone) {
   var a = document.getElementById(txtPhone).value;
   // This filter asks for something like (12345), so parentheses with any number (at least 1)
   // of digits
-  var filter = /^(\([-+]?[0-9]+)\)$/;
+  var filter = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
   if (filter.test(a)) {
     return true;
   } else {
@@ -39,8 +39,10 @@ $(document).ready(function () {
   // The "error" class in style.css defines yellow background and red foreground
   $("#phone").on("change", function () {
     if (!validatePhone("phone")) {
-      alert("Wrong format for phone");
-      $("#phone").val("(xxxx)");
+      alert(
+        "Incorrect format for phone number:\n Please format number as example: 123-456-7890"
+      );
+      $("#phone").val("XXX-XXX-XXXX");
       $("#phone").addClass("error");
     } else {
       $("#phone").removeClass("error");
