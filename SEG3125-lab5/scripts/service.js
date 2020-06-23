@@ -101,15 +101,10 @@ $(document).ready(function () {
     $("#debit").removeClass("showInput");
   });
 
-  $(function () {
-    $("form#credSign").submit(function (e) {
-      e.preventDefault();
-      $.post("processdata.php", $(this).serialize(), function (data) {
-        //Your code to process returned data goes here
-
-        $("#postresult").text("Thank you!");
-      });
-    });
+  $("#submit").bind("click", function () {
+    alert(
+      "Your request has been sent to our team!\n We'll get back to you in 2-3 business days."
+    );
   });
 
   // https://jqueryui.com/tooltip/
