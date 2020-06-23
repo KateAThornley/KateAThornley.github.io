@@ -62,3 +62,7 @@ body {
 .card-body {
   background-color: #98c1d97a;
 }
+
+.content {
+  z-index: -1;
+}

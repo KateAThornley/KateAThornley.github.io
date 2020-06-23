@@ -54,11 +54,11 @@ $(document).ready(function () {
 
   // Also, here is a good tutorial for playing with the datepicker in https://webkul.com/blog/jquery-datepicker/
   // Datepicker is also documented as one of the widgets here: https://api.jqueryui.com/category/widgets/
-  $("#dateInput").datepicker({
+  $("#dateTimeInput").datepicker({
     dateFormat: setDateFormat,
     // no calendar before June 1rst 2020
-    minDate: new Date("06/01/2020"),
-    maxDate: "+4M",
+    minDate: new Date("05/01/2020"),
+    maxDate: "+2M",
     // used to disable some dates
     beforeShowDay: $.datepicker.noWeekends,
     beforeShowDay: disableDates,
@@ -73,6 +73,17 @@ $(document).ready(function () {
 
   $("#debit").on("mouseleave", function () {
     $("#debit").removeClass("showInput");
+  });
+
+  $(function () {
+    $("form#credSign").submit(function (e) {
+      e.preventDefault();
+      $.post("processdata.php", $(this).serialize(), function (data) {
+        //Your code to process returned data goes here
+
+        $("#postresult").text("Thank you!");
+      });
+    });
   });
 
   // https://jqueryui.com/tooltip/
