@@ -1,11 +1,11 @@
 {
-  "name": "theOrdinarySurvey",
+  "name": "colorsurvey",
   "version": "1.0.0",
-  "description": "A survey on skincare brand The Ordinary's website",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node your-script.js"
+    "start": "node app.js"
   },
   "author": "Kate Thornley",
   "license": "ISC",
