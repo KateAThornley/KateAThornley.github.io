@@ -41,11 +41,23 @@ module.exports = function (app) {
   // when a user goes to localhost:3000/analysis
   // serve a template (ejs file) which will include the data from the data files
   app.get("/analysis", function (req, res) {
-    var color = readData("color");
-    var fruit = readData("fruit");
-    var animal = readData("animal");
-    res.render("showResults", { results: [color, fruit, animal] });
-    console.log([color, fruit, animal]);
+    let impressions = readData("participant_name");
+    let schools = readData("school");
+    let helpful = readData("helpful");
+    let appeal = readData("appeal");
+    let improvement = readData("need_improvement");
+    let recommend = readData("recommend_likelihood");
+    res.render("showResults", {
+      results: [impressions, schools, helpful, appeal, improvement, recommend],
+    });
+    console.log([
+      impressions,
+      schools,
+      helpful,
+      appeal,
+      improvement,
+      recommend,
+    ]);
   });
 
   // when a user goes to localhost:3000/niceSurvey
@@ -63,7 +75,7 @@ module.exports = function (app) {
     for (var key in json) {
       console.log(key + ": " + json[key]);
       // in the case of checkboxes, the user might check more than one
-      if (key === "color" && json[key].length === 2) {
+      if (key === "appeal" && json[key].length > 1) {
         for (var item in json[key]) {
           combineCounts(key, json[key][item]);
         }
@@ -71,8 +83,7 @@ module.exports = function (app) {
         combineCounts(key, json[key]);
       }
     }
-    // mystery line... (if I take it out, the SUBMIT button does change)
-    // if anyone can figure this out, let me know!
+
     res.sendFile(__dirname + "/views/niceSurvey.html");
   });
 };

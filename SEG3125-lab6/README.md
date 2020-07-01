@@ -1,1 +1,1 @@
-# KateAThornley.github.io
+# SEG3125 Lab 6
