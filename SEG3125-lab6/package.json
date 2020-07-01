@@ -1,12 +1,13 @@
 {
-  "name": "TheOrdinarySurvey",
+  "name": "colorsurvey",
   "version": "1.0.0",
-  "author": "Kate Thornley",
-  "description": "A Survey for the class SEG3125 on the UI of The Ordinary's online store.",
+  "description": "A survey on skincare brand The Ordinary's website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node your-script.js"
   },
+  "author": "Kate Thornley",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

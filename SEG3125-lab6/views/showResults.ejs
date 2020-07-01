@@ -1,22 +1,15 @@
 <html lang="en-US">
 <head>
-    <title>Survey Analysis</title>
+    <title>The Ordinary UI Survey Analysis</title>
     <link href="/styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Survey Results</h1>
+    <h1>Results</h1>
     <h2>First Impressions:</h2>
     <ul>
     <% for (var i=0; i<results[0].length; i++){ %>
         <li><%= results[0][i].participant_name %> :  <%= results[0][i].count %></li>
-    <% } %>    
-    </ul>
-    <br>
-    <h2>Does the layout of The Ordinary's page made the survey participants feel focused?</h2>
-    <ul>
-    <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].school %> :  <%= results[1][i].count %></li>
     <% } %>    
     </ul>
     <br>
@@ -34,7 +27,7 @@
     <% } %>    
     </ul>
     <br>
-    <h2>What participants think should be the one thing LeetCode should look to improve on:</h2>
+    <h2>If users felt the website layout was focused:</h2>
     <ul>
     <% for (var i=0; i<results[4].length; i++){ %>
         <li><%= results[4][i].need_improvement %> :  <%= results[4][i].count %></li>
@@ -47,5 +40,13 @@
         <li><%= results[5][i].recommend_likelihood %> :  <%= results[5][i].count %></li>
     <% } %>    
     </ul>
+    <br>
+    <h2>Survey user's school and comments</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].school %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <br>
 </body>
 </html>
