@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Kat Thornley's Porfolio`,
+    title: `Fungus Finds`,
     description: `Looking for a front-end dev for your next project? Check me out to see if I suit your needs!`,
     author: `@kat.thornley`,
   },
   plugins: [
+    "gatsby-plugin-antd",
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-catch-links",
     {
@@ -33,4 +34,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
