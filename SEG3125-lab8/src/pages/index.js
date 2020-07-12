@@ -36,12 +36,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Title level={2}>Welcome To Fungus Finds!</Title>
     <Text style={styles.textStyle}>
-      Search for a mushroom in our dictionary by its genus/species in the search
-      bar below.
+      Search for a mushroom in our dictionary by selecting its genus in the
+      search bar below.
     </Text>
     <Select
       showSearch
-      style={{ width: "90%" }}
+      style={{ width: "90%", alignContent: "center", marginTop: "20px" }}
       placeholder="Select a person"
       optionFilterProp="children"
       onChange={onChange}
@@ -52,10 +52,17 @@ const IndexPage = () => (
         option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
       }
     >
-      <Option value="jack">Jack</Option>
-      <Option value="lucy">Lucy</Option>
-      <Option value="tom">Tom</Option>
+      <Option value="Agaricus">Agaricus</Option>
+      <Option value="Boletus">Boletus</Option>
+      <Option value="Cantharellus">Cantharellus</Option>
+      <Option value="Chalciporus">Chalciporus</Option>
+      <Option value="Hortiboletus">Hortiboletus</Option>
+      <Option value="Leccinum">Leccinum</Option>
+      <Option value="Macrolepiota">Macrolepiota</Option>
+      <Option value="Suillus">Suillus</Option>
+      <Option value="Tylopilus">Tylopilus</Option>
     </Select>
+    <Button>Search</Button>
   </Layout>
 );
 
