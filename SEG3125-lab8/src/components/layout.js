@@ -28,10 +28,10 @@ const styles = {
   },
   footerStyle: {
     textAlign: "center",
-    position: "fixed",
     bottom: "0",
     width: "100%",
     paddingBottom: "20px",
+    paddingTop: "20px",
   },
 };
 

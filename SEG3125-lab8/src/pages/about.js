@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { QuestionCircleOutlined } from "@ant-design/icons";
+import { QuestionCircleOutlined, LeftOutlined } from "@ant-design/icons";
 
 const AboutPage = () => (
   <Layout>
@@ -19,7 +19,10 @@ const AboutPage = () => (
       working knowledge of design principles, stylistic choices, and lorem ipsem
       lorem ipsm,...
     </p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link style={{ color: "#1d3557" }} to="/">
+      <LeftOutlined />
+      Back to Search
+    </Link>
   </Layout>
 );
 

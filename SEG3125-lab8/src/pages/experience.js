@@ -1,49 +1,73 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { Card, Col, Row } from "antd";
+import { LeftOutlined } from "@ant-design/icons";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+
+import AB from "../images/agaricus-bisporus.jpg";
+import AC from "../images/agaricus-campestris.jpg";
+import BC from "../images/boletus-campestris.jpg";
+
+const { Meta } = Card;
+
+const styles = {
+  cardStyle: {
+    marginTop: "20px",
+    marginBottom: "20px",
+    width: "300px",
+  },
+};
 
 const ExperiencePage = () => (
   <Layout>
-    <SEO title="Experience" />
-
-    <h1>What's Been Done</h1>
+    <SEO title="Dictionary" />
+    <h1>Mushroom Identification Dictionary</h1>
     <p>
-      Now, let's take a look at some of the work I've done in my career thus
-      far:
+      Scroll below to browse our dictionary of funguses organized by genus, or
+      go{" "}
+      <Link style={{ color: "#1d3557" }} to="/">
+        back to the search page
+      </Link>{" "}
+      to search by genus directly
     </p>
-
-    <h2>Enterprise Architect - Environment and Climate Change Canada</h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet
-      sed ipsum at ullamcorper. Proin non ante porttitor, fermentum libero nec,
-      porttitor lectus. Praesent tempor luctus justo, vel volutpat ante
-      tincidunt ac. Suspendisse eu nisl ipsum. Vivamus gravida dui eget mauris
-      vehicula, in tincidunt nulla pretium. Pellentesque porta suscipit dui, ut
-      fringilla tellus congue eget. Integer faucibus sapien in auctor viverra.
-      Nunc molestie ut leo sit amet tincidunt. Aliquam finibus euismod tortor
-      vel mollis. Sed est lacus, sollicitudin eget mattis eu, luctus ac felis.
-    </p>
-
-    <h2>
-      Junior Software Developer - Innovation, Science, and Economic Development
-      Canada
-    </h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet
-      sed ipsum at ullamcorper. Proin non ante porttitor, fermentum libero nec,
-      porttitor lectus. Praesent tempor luctus justo, vel volutpat ante
-      tincidunt ac. Suspendisse eu nisl ipsum. Vivamus gravida dui eget mauris
-      vehicula, in tincidunt nulla pretium. Pellentesque porta suscipit dui, ut
-      fringilla tellus congue eget. Integer faucibus sapien in auctor viverra.
-      Nunc molestie ut leo sit amet tincidunt. Aliquam finibus euismod tortor
-      vel mollis. Sed est lacus, sollicitudin eget mattis eu, luctus ac felis.
-    </p>
-
-    <Link to="/">Go back to the homepage</Link>
+    <Row gutter={16}>
+      <Col span={8}>
+        <Card
+          hoverable
+          style={styles.cardStyle}
+          cover={<img alt="example" src={AB} />}
+        >
+          <Meta title="Agaricus Bisporus" description="Native to" />
+        </Card>
+      </Col>
+      <Col span={8}>
+        <Card
+          hoverable
+          style={styles.cardStyle}
+          cover={<img alt="example" src={AC} />}
+        >
+          <Meta title="Europe Street beat" description="www.instagram.com" />
+        </Card>
+        <Card hoverable style={styles.cardStyle} cover={<img alt="example" />}>
+          <Meta title="Europe Street beat" description="www.instagram.com" />
+        </Card>
+      </Col>
+      <Col span={8}>
+        <Card
+          hoverable
+          style={styles.cardStyle}
+          cover={<img alt="example" src={BC} />}
+        >
+          <Meta title="Europe Street beat" description="www.instagram.com" />
+        </Card>
+      </Col>
+    </Row>
+    <Link style={{ color: "#1d3557" }} to="/">
+      <LeftOutlined />
+      Back to Search
+    </Link>
   </Layout>
-)
+);
 
-export default ExperiencePage
+export default ExperiencePage;
