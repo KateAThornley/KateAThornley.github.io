@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Button, Typography, Select } from "antd";
-
+import { Card, Typography, Select, Row, Col, Button } from "antd";
+import { RightOutlined } from "@ant-design/icons";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
-
+import AB from "../images/agaricus-bisporus.jpg";
 const { Title, Text } = Typography;
 const { Option } = Select;
+const { Meta } = Card;
 
 const styles = {
   textStyle: {
@@ -28,7 +29,7 @@ function onFocus() {
 }
 
 function onSearch(val) {
-  console.log("search:", val);
+  console.log("search: " + val);
 }
 
 const IndexPage = () => (
@@ -65,5 +66,23 @@ const IndexPage = () => (
     <Button>Search</Button>
   </Layout>
 );
+
+export const pageQuery = graphql`
+  query SearchIndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+            date
+            author
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

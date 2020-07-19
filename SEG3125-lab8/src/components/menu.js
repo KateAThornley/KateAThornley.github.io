@@ -31,11 +31,11 @@ const Menu = () => (
 
       <li>
         <ReadOutlined style={styles.iconStyle} />
-        <Link to="/experience">ID Dictionary</Link>
+        <Link to="/blog">ID Dictionary</Link>
       </li>
       <li>
         <EditOutlined style={styles.iconStyle} />
-        <Link to="/blog">Contribute</Link>
+        <Link to="/experience">Contribute</Link>
       </li>
       <li>
         <QuestionCircleOutlined style={styles.iconStyle} />

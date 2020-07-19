@@ -1,12 +1,16 @@
-import React from "react"
-import Link from "gatsby-link"
-import Layout from "../components/layout"
+import React from "react";
+import Link from "gatsby-link";
+import Layout from "../components/layout";
+import { LeftOutlined } from "@ant-design/icons";
 export default function Template({ data }) {
-  const post = data.markdownRemark
+  const post = data.markdownRemark;
   return (
     <Layout>
       <div>
-        <Link to="/blog">Go Back</Link>
+        <Link to="/blog" style={{ color: "#1d3557" }}>
+          <LeftOutlined style={{ paddingLeft: "8px", height: "8px" }} />
+          Go Back
+        </Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>
         <h4>
@@ -15,7 +19,7 @@ export default function Template({ data }) {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
-  )
+  );
 }
 
 export const postQuery = graphql`
@@ -30,4 +34,4 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;
