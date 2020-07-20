@@ -2,6 +2,7 @@
 path: "/post-four"
 date: "2020-04-14"
 title: Cantharellus Cibarius
+genus: "Cantharellus"
 author: "Doug Dime"
 ---
 

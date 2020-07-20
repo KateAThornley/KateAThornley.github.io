@@ -2,6 +2,7 @@
 path: "/post-five"
 date: "2020-04-14"
 title: Chalciprus Amarellus
+genus: "Chalciprus"
 author: "Kat Thornley"
 ---
 

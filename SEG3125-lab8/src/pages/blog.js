@@ -4,7 +4,6 @@ import { Card, Row, Col } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import AB from "../images/agaricus-bisporus.jpg";
 import AC from "../images/agaricus-campestris.jpg";
 import BC from "../images/boletus-campestris.jpg";
@@ -80,6 +79,7 @@ export const pageQuery = graphql`
             title
             date
             author
+            genus
           }
         }
       }

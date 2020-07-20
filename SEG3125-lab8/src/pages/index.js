@@ -10,6 +10,8 @@ const { Title, Text } = Typography;
 const { Option } = Select;
 const { Meta } = Card;
 
+let genus = "";
+
 const styles = {
   textStyle: {
     fontSize: "20px",
@@ -18,6 +20,7 @@ const styles = {
 
 function onChange(value) {
   console.log(`selected ${value}`);
+  genus = value;
 }
 
 function onBlur() {
@@ -32,7 +35,7 @@ function onSearch(val) {
   console.log("search: " + val);
 }
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Title level={2}>Welcome To Fungus Finds!</Title>
@@ -43,7 +46,7 @@ const IndexPage = () => (
     <Select
       showSearch
       style={{ width: "90%", alignContent: "center", marginTop: "20px" }}
-      placeholder="Select a person"
+      placeholder="Select a mushroom genus"
       optionFilterProp="children"
       onChange={onChange}
       onFocus={onFocus}
@@ -63,7 +66,34 @@ const IndexPage = () => (
       <Option value="Suillus">Suillus</Option>
       <Option value="Tylopilus">Tylopilus</Option>
     </Select>
-    <Button>Search</Button>
+    {data.allMarkdownRemark.edges.map((post) => (
+      <div key={post.node.id}>
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card cover={<img src={AB} />} style={styles.cardStyle}>
+              <Meta
+                title={post.node.frontmatter.title}
+                description={
+                  "Mushroom post author: " + post.node.frontmatter.author
+                }
+              />
+              <div style={{ paddingTop: "20px" }}>
+                <Link
+                  to={post.node.frontmatter.path}
+                  style={{ color: "#1d3557" }}
+                >
+                  Read More
+                  <RightOutlined
+                    style={{ paddingLeft: "8px", height: "8px" }}
+                  />
+                </Link>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+      </div>
+    ))}
+    ;
   </Layout>
 );
 
@@ -78,6 +108,7 @@ export const pageQuery = graphql`
             title
             date
             author
+            genus
           }
         }
       }

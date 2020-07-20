@@ -2,6 +2,7 @@
 path: "/post-two"
 date: "2020-04-14"
 title: "Agaricus Campestris"
+genus: "Agaricus"
 author: "Mohamed Medhi"
 ---
 

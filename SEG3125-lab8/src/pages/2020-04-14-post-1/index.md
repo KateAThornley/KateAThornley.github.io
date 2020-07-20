@@ -2,6 +2,7 @@
 path: "/post-one"
 date: "2020-07-14"
 title: "Agaricus Bisporus"
+genus: "Agaricus"
 author: "Kat Thornley"
 ---
 

@@ -2,6 +2,7 @@
 path: "/post-three"
 date: "2020-04-14"
 title: Boletus Campestris
+genus: "Boletus"
 author: "John Doe"
 ---
 
