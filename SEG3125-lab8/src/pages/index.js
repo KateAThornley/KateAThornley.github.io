@@ -38,7 +38,7 @@ function onSearch(val) {
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Title level={2}>Welcome To Fungus Finds!</Title>
+    <h1>Welcome To Fungus Finds!</h1>
     <Text style={styles.textStyle}>
       Search for a mushroom in our dictionary by selecting its genus in the
       search bar below.

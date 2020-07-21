@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+
 import {
   QuestionCircleOutlined,
   SearchOutlined,
   ReadOutlined,
-  EditOutlined,
 } from "@ant-design/icons";
 
 const styles = {
@@ -32,10 +30,6 @@ const Menu = () => (
       <li>
         <ReadOutlined style={styles.iconStyle} />
         <Link to="/blog">ID Dictionary</Link>
-      </li>
-      <li>
-        <EditOutlined style={styles.iconStyle} />
-        <Link to="/experience">Contribute</Link>
       </li>
       <li>
         <QuestionCircleOutlined style={styles.iconStyle} />

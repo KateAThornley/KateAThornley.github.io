@@ -22,6 +22,9 @@ const styles = {
     marginBottom: "20px",
     width: "300px",
   },
+  textStyle: {
+    fontSize: "20px",
+  },
 };
 
 let imageArray = [AB, AC, BC, CC, CA, CP, CPS, HB, HE];
@@ -29,7 +32,7 @@ let imageArray = [AB, AC, BC, CC, CA, CP, CPS, HB, HE];
 const BlogPage = ({ data }) => (
   <Layout>
     <h1>Mushroom Identification Dictionary</h1>
-    <p>
+    <p style={styles.textStyle}>
       Scroll below to browse our dictionary of funguses organized by genus, or
       go{" "}
       <Link style={{ color: "#1d3557" }} to="/">
