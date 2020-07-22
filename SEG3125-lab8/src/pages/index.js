@@ -90,6 +90,48 @@ const IndexPage = ({ data }) => (
               </div>
             </Card>
           </Col>
+          <Col span={8}>
+            <Card cover={<img src={AB} />} style={styles.cardStyle}>
+              <Meta
+                title={post.node.frontmatter.title}
+                description={
+                  "Mushroom post author: " + post.node.frontmatter.author
+                }
+              />
+              <div style={{ paddingTop: "20px" }}>
+                <Link
+                  to={post.node.frontmatter.path}
+                  style={{ color: "#1d3557" }}
+                >
+                  Read More
+                  <RightOutlined
+                    style={{ paddingLeft: "8px", height: "8px" }}
+                  />
+                </Link>
+              </div>
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card cover={<img src={AB} />} style={styles.cardStyle}>
+              <Meta
+                title={post.node.frontmatter.title}
+                description={
+                  "Mushroom post author: " + post.node.frontmatter.author
+                }
+              />
+              <div style={{ paddingTop: "20px" }}>
+                <Link
+                  to={post.node.frontmatter.path}
+                  style={{ color: "#1d3557" }}
+                >
+                  Read More
+                  <RightOutlined
+                    style={{ paddingLeft: "8px", height: "8px" }}
+                  />
+                </Link>
+              </div>
+            </Card>
+          </Col>
         </Row>
       </div>
     ))}
