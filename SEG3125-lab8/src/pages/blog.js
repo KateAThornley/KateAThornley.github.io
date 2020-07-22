@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Card, Row, Col } from "antd";
-import { RightOutlined } from "@ant-design/icons";
+import { Card, Row, Col, Tooltip } from "antd";
+import { RightOutlined, InfoCircleOutlined } from "@ant-design/icons";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import AB from "../images/agaricus-bisporus.jpg";
@@ -39,6 +39,9 @@ const BlogPage = ({ data }) => (
         back to the search page
       </Link>{" "}
       to search by genus directly
+      <Tooltip title="The following cards lead to blog posts with information on the selected mushroom">
+        <InfoCircleOutlined style={{ marginLeft: "8px" }} />
+      </Tooltip>
     </p>
 
     {data.allMarkdownRemark.edges.map((post) => (

@@ -1,6 +1,15 @@
 import React, { createElement, useState } from "react";
 import Link from "gatsby-link";
-import { Comment, Tooltip, Avatar, Form, Button, List, Input } from "antd";
+import {
+  Comment,
+  Tooltip,
+  Avatar,
+  Form,
+  Button,
+  List,
+  Input,
+  Divider,
+} from "antd";
 import moment from "moment";
 import Layout from "../components/layout";
 import {
@@ -9,6 +18,7 @@ import {
   DislikeFilled,
   LikeFilled,
   LeftOutlined,
+  InfoCircleOutlined,
 } from "@ant-design/icons";
 
 const Template = ({ data }) => {
@@ -136,7 +146,14 @@ const Template = ({ data }) => {
         </h4>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-      {/* <Comment
+      <Divider orientation="left">
+        Comments{" "}
+        <Tooltip title="The following section allows you to add comments to this mushroom post about where you've spotted it, in what climate, and other relevant information!">
+          <InfoCircleOutlined style={{ marginLeft: "8px" }} />
+        </Tooltip>
+      </Divider>
+
+      <Comment
         actions={actions}
         author={<a>Ally Sim</a>}
         avatar={
@@ -156,7 +173,7 @@ const Template = ({ data }) => {
             <span>{moment().fromNow()}</span>
           </Tooltip>
         }
-      /> */}
+      />
       <>
         {comments.length > 0 && <CommentList comments={comments} />}
         <Comment
